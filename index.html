@@ -85,7 +85,31 @@
     </header>
 
     <div class="main-wrapper">
-
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-6 col-lg-5 col-xl-5 col-11 form-wrapper">  
+                      <form class="p-4 login_form">
+                          <div class="mb-3 text-end">
+                              <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                          </div>
+                          <div class="mb-3 formtittle">
+                              <h2>Please enter your credentials</h2>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Username" class="form-label">Username:</label>
+                              <input type="text" class="form-control p-3" id="Username" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="Password" class="form-label">Password:</label>
+                              <input type="text" class="form-control p-3" id="Password" required>
+                          </div>
+                          <div class="mb-3 text-center">
+                              <button class="btn_ form_login_btn" type="submit">Login</button>
+                          </div>
+                      </form>
+              </div>
+            </div>
+          </div>
     </div>
 
     <div class="navigation">
@@ -180,7 +204,37 @@
                     <a href="#" class="btn_ enquire_btn" onclick="handleform()">Enquire Now</a>
                 </div>
             </div>
-            <div class="main-enquire-wrapper"> </div>
+            <div class="main-enquire-wrapper"> 
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 enquire-wrapper">  
+                              <form class="p-4 enquire_form">
+                                  <div class="mb-3 text-end">
+                                      <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                                  </div>
+                                  <div class="mb-3 formtittle ">
+                                      <h2>Please enter your credentials</h2>
+                                  </div>
+                                  <div class="mb-3 ">
+                                      <label for="Username" class="form-label ">Name:</label>
+                                      <input type="text" class="form-control  p-3" id="Username" required>
+                                  </div>
+                                  <div class="mb-3 ">
+                                      <label for="Password" class="form-label ">Email ID:</label>
+                                      <input type="email" class="form-control  p-3" id="Password" required>
+                                  </div>
+                                  <div class="mb-3 ">
+                                      <label for="Password" class="form-label">Mobile No:</label>
+                                      <input type="tel" class="form-control  p-3" id="Password" required>
+                                  </div>
+                                  <div class="mb-3 text-center ">
+                                      <button class="btn_ form_login_btn" type="submit">Apply</button>
+                                  </div>
+                              </form>
+                      </div>
+                    </div>
+                  </div>
+            </div>
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

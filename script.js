@@ -48,108 +48,57 @@ window.addEventListener("scroll", () => {
 });
 
 // ============================================= Login Form ===========================================================
-document.addEventListener("DOMContentLoaded", function () {
-  let index_login_btn = document.querySelector(".index_login_btn");
-  let bottom_header_btn = document.querySelector(".bottom_header_btn");
-  let main_wrapper = document.querySelector(".main-wrapper");
+  var bottom_header_btn = document.querySelector(".bottom_header_btn");
+  var form_wrapper = document.querySelector(".form-wrapper");
+  var index_login_btn = document.querySelector(".index_login_btn");
 
-  function generatLoginForm() {
-    main_enquire_wrapper.style.visibility="hidden";
-    main_wrapper.style.visibility = "visible";
+  var login_form=document.querySelector('.login_form');
+  var close = login_form.querySelector(".close");
 
-    let formTemplate = `
-    <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 form-wrapper">  
-              <form class="p-4 login_form">
-                  <div class="mb-3 text-end">
-                      <span class="close"><i class="fa-solid fa-xmark"></i></span>
-                  </div>
-                  <div class="mb-3 formtittle">
-                      <h2>Please enter your credentials</h2>
-                  </div>
-                  <div class="mb-3">
-                      <label for="Username" class="form-label">Username:</label>
-                      <input type="text" class="form-control p-3" id="Username" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="Password" class="form-label">Password:</label>
-                      <input type="text" class="form-control p-3" id="Password" required>
-                  </div>
-                  <div class="mb-3 text-center">
-                      <button class="btn_ form_login_btn" type="submit">Login</button>
-                  </div>
-              </form>
-      </div>
-    </div>
-  </div>
-    `;
-    main_wrapper.innerHTML = formTemplate;
-    var login_form = document.querySelector(".login_form");
-    var close = login_form.querySelector(".close");
-    login_form.classList.add("form_active");
 
-    close.addEventListener("click", () => {
-      login_form.classList.remove("form_active");
-      main_wrapper.style.visibility = "hidden";
-    });
-  }
-  bottom_header_btn.addEventListener("click",generatLoginForm);
-  index_login_btn.addEventListener("click",generatLoginForm);
-});
-//  ======================================== Enquire Form ==============================================================
-var main_enquire_wrapper = document.querySelector(".main-enquire-wrapper");
-let enquire_btn = document.querySelectorAll(".enquire_btn");
-var main_wrapper = document.querySelector(".main-wrapper");
+  bottom_header_btn.addEventListener("click", ()=>{
+    enquire_wrapper.classList.remove("zoom");
+    form_wrapper.style.display="block";
+    enquire_wrapper.style,display="none";
+    setTimeout(()=>{
+      form_wrapper.classList.add("zoom");
+    },10);
+  })
 
-function handleform() {
-  main_wrapper.style.visibility = "hidden"; 
-  main_enquire_wrapper.style.visibility = "visible";
+  close.addEventListener("click",()=>{
+    setTimeout(()=>{
+      form_wrapper.classList.remove("zoom");
+    },10)
+  })
 
-  let enqform = `
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 enquire-wrapper">  
-                <form class="p-4 enquire_form">
-                    <div class="mb-3 text-end">
-                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
-                    </div>
-                    <div class="mb-3 formtittle ">
-                        <h2>Please enter your credentials</h2>
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="Username" class="form-label ">Name:</label>
-                        <input type="text" class="form-control  p-3" id="Username" required>
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="Password" class="form-label ">Email ID:</label>
-                        <input type="email" class="form-control  p-3" id="Password" required>
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="Password" class="form-label">Mobile No:</label>
-                        <input type="tel" class="form-control  p-3" id="Password" required>
-                    </div>
-                    <div class="mb-3 text-center ">
-                        <button class="btn_ form_login_btn" type="submit">Apply</button>
-                    </div>
-                </form>
-        </div>
-      </div>
-    </div>
-    `;
-  main_enquire_wrapper.innerHTML = enqform;
-  let enquire_form = document.querySelector(".enquire_form");
-  let enqclose = enquire_form.querySelector(".close");
+  index_login_btn.addEventListener("click",()=>{
+    enquire_wrapper.classList.remove("zoom");
+    form_wrapper.style.display="block";
+    enquire_wrapper.style,display="none";
+    setTimeout(()=>{
+      form_wrapper.classList.add("zoom");
+    },10);
+  })
+  // ========================================  enquire form =================================================
+  var enquire_wrapper=document.querySelector(".enquire-wrapper");
+  var enquire_form=enquire_wrapper.querySelector(".enquire_form");
+  var enqclose=enquire_form.querySelector(".close");
+   function handleform(){
+    console.log('kk');
+    form_wrapper.classList.remove("zoom");
+    enquire_wrapper.style.display="block";
+    form_wrapper.style.display="none";
+    setTimeout(()=>{
+      enquire_wrapper.classList.add("zoom");
+    },10)
+   }
+   enqclose.addEventListener("click",()=>{
+    setTimeout(()=>{
+      enquire_wrapper.classList.remove("zoom");
+    },10)
+   })
 
-  enquire_form.classList.add("enqire_active");
-
-  enqclose.addEventListener("click", () => {
-    enquire_form.classList.remove("enqire_active");
-    main_enquire_wrapper.style.visibility = "hidden"; 
-  });
-}
-
-// #######============================= Toggle with navbar ========================================================
+// =================================== Toggle with navbar ========================================================
 let fa_bars = document.querySelector(".fa-bars");
 let navigation = document.querySelector(".navigation");
 let carouselExampleCaptions = document.getElementById("carouselExampleFade");

@@ -32,7 +32,7 @@
         box-sizing: border-box;
     }
 }
-
+/* =================================================== vivew-port = 991px ======================================== */
 @media screen and (max-width:991px){
     section{
         max-width: 80%;
@@ -65,6 +65,8 @@
     left: 5rem;
 }
 }
+/* =================================================== vivew-port = 768px ======================================== */
+
 @media screen and (max-width:768px){
     .index_contact{
         right: -9.50%;
@@ -113,6 +115,8 @@
     left: 5rem;
 }
 }
+/* =================================================== vivew-port = 576px ======================================== */
+
 @media screen and (max-width:576px){
     .index_contact{
         right: -12%;
@@ -136,6 +140,10 @@
     }
     .caption{
         left: -3rem;
+    }
+    .caption h3
+    {
+        font-size: 2.5rem;
     }
     /* ######## About-section ######### */
     .card_body h2{
@@ -212,6 +220,8 @@
         font-size: 1.4rem;
     }
 }
+/* =================================================== vivew-port = 479px ======================================== */
+
 @media screen and (max-width:479px){
     .index_contact{
         right: -15%;
@@ -305,6 +315,8 @@
     }
     
 }
+/* =================================================== vivew-port = 400px ======================================== */
+
 @media screen and (max-width:400px){
     .index_contact{
         right: -18%;

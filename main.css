@@ -201,37 +201,29 @@ h5 {
   color: var(--icon-c);
 }
 /* ================================================= Form ============================================== */
-.main-wrapper{
-  /* display: none; */
-  visibility: hidden;
-}
 .main-wrapper .row{
  display: flex;
  justify-content: center;
 }
  .form-wrapper{
+  padding: 0;
   position: absolute;
   top: 30%;
   z-index: 2;
-  padding: 0;
+  display: none;
   border-radius: 6px;
+  transform: scale(0);
+  transition: transform 0.7s ease;
 }
-
+.form-wrapper.zoom {
+  transform:  scale(1);
+}
 .main-wrapper form{
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 20px;
   border-radius: 6px;
   width: 100%;
-  opacity: 0;
-  transform: scale(0.3);
   transform-origin: center;
-  transition: opacity 0.7s ease, transform 0.7s ease;
-  /* transition:transform ease 0.7s; */
-}
-
-.main-wrapper form.form_active{
-  opacity: 1;
-  transform: scale(1);
 }
 .main-wrapper form .close{
   font-size: 1.8rem;
@@ -383,7 +375,7 @@ h5 {
   width: 9%;
   padding: 0;
   opacity: 0;
-  transition: 0.15s ease;
+  transition: 0.6s ease-in-out;
   cursor: default !important;
 }
 .carousel-control-next {
@@ -393,7 +385,7 @@ h5 {
   padding: 0;
   text-align: right;
   opacity: 0;
-  transition: 0.15s ease;
+  transition: 0.6s ease-in-out;
 }
 
 .caption .btn_{
@@ -444,37 +436,31 @@ h5 {
   width: 40px;
 }
 /* ===================================== Enquire Wrapper ==================== */
-.main-enquire-wrapper{
-  /* display: none; */
-  visibility: hidden;
-}
 .main-enquire-wrapper .row{
   display: flex;
   justify-content: center;
   align-items:stretch;
 }
 .main-enquire-wrapper .enquire-wrapper{
+  padding: 0;
   position: absolute;
   top: 2%;
   z-index: 2;
-  padding: 0;
+  display: none;
   border-radius: 6px;
+  transform: scale(0);
+  transition: transform 0.7s ease;
 }
 .main-enquire-wrapper form{
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 20px;
   border-radius: 6px;
   width: 100%;
-  opacity: 0;
-  transform: scale(0);
   transform-origin: center;
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.main-enquire-wrapper form.enqire_active{
-  opacity: 1;
-  transform: scale(1); 
+.enquire-wrapper.zoom{
+  transform:  scale(1);
 }
-
 .main-enquire-wrapper form .close{
   font-size: 1.8rem;
   color: var(--icon-c);
@@ -569,7 +555,6 @@ h5 {
 .card_body h2 {
   font-size: 1.9rem;
   color: var(--navyblue-color);
-  color:var(--icon-c);
   font-weight: 500;
   line-height: 4rem;
   text-align: left;
