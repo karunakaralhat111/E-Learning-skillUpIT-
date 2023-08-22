@@ -282,7 +282,7 @@
     padding: 1rem 0;
   }
   .counder_area .Counter-tittle h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin: 0 0 8px;
   }
   .counder_area .Counter-tittle p {
@@ -307,12 +307,21 @@
   .counder_areaIV .Counter-tittle .btn_ {
     padding: 1.8rem 2rem;
   }
+ 
 }
 /* =================================================== vivew-port = 400px ======================================== */
 
 @media screen and (max-width: 400px) {
   .index_contact {
     right: -18%;
+  }
+  .carousel img {
+    height: 65vh;
+    object-fit: cover;
+    object-position: 45%;
+  }
+  .about .card_wrapper .card{
+    margin: 1rem 0rem;
   }
 }
 @media screen and (max-width: 300px) {
