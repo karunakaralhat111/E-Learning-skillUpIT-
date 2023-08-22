@@ -234,12 +234,12 @@
   }
   /* ===== Carousel ==== */
   .carousel img {
-    height: 68vh;
+    height: 65vh;
     object-fit: cover;
     object-position: 45%;
   }
   .main-enquire-wrapper .enquire-wrapper{
-    top: -5%;
+    top: 1%;
   }
   .close_icon {
     right: 5px;
