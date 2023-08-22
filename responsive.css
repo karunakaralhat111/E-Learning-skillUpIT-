@@ -233,14 +233,6 @@
     font-size: 14px;
   }
   /* ===== Carousel ==== */
-  .carousel img {
-    height: 65vh;
-    object-fit: cover;
-    object-position: 45%;
-  }
-  .main-enquire-wrapper .enquire-wrapper{
-    top: 2%;
-  }
   .close_icon {
     right: 5px;
   }
@@ -315,14 +307,7 @@
   .index_contact {
     right: -18%;
   }
-  .carousel img {
-    height: 65vh;
-    object-fit: cover;
-    object-position: 45%;
-  }
-  .main-enquire-wrapper .enquire-wrapper{
-    top: 5%;
-  }
+  
   .about .card_wrapper .card{
     margin: 1rem 0rem;
   }
