@@ -282,7 +282,7 @@ h5 {
   padding: 5px;
 }
 .menu_logo {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   display: flex;
   justify-content: center;
@@ -399,7 +399,6 @@ h5 {
   position: absolute;
   top: 14rem;
   left: 14rem;
-  /* border: 1px solid red; */
   width: fit-content !important;
 }
 .caption h1 {

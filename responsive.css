@@ -1,336 +1,327 @@
-
-@media screen and (max-width:1200px){
-    section{
-        max-width: 75%;
-    }
-    .nav_menu a{
-        font-size: 22px;
-    }
-    .carousel-control-prev{
-        width:5%;
-    }
-    .carousel-control-next{
-        width: 5%;
-    } 
-    .fa-chevron-left{
-        transform: translateX(-2rem);
-        top: 7rem;   
-    }
-    .fa-chevron-right{
-        top: 7rem;
-        transform: translateX(2rem);    
-    }
-    .caption{
-        top: 11rem;
-        left: 3rem;
-        margin-left: 5rem !important;
-    }
-    .counder_areaIV{
-        max-width: 75%;
-        width: 100%;
-        margin: auto;
-        box-sizing: border-box;
-    }
+@media screen and (max-width: 1200px) {
+  section {
+    max-width: 75%;
+  }
+  .nav_menu a {
+    font-size: 22px;
+  }
+  .carousel-control-prev {
+    width: 5%;
+  }
+  .carousel-control-next {
+    width: 5%;
+  }
+  .fa-chevron-left {
+    transform: translateX(-2rem);
+    top: 7rem;
+  }
+  .fa-chevron-right {
+    top: 7rem;
+    transform: translateX(2rem);
+  }
+  .caption {
+    top: 11rem;
+    left: 3rem;
+    margin-left: 5rem !important;
+  }
+  .counder_areaIV {
+    max-width: 75%;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
 }
 /* =================================================== vivew-port = 991px ======================================== */
-@media screen and (max-width:991px){
-    section{
-        max-width: 80%;
-    }
-    .nav_menu a{
-        font-size: 20px;
-    }
+@media screen and (max-width: 991px) {
+  section {
+    max-width: 80%;
+  }
+  .nav_menu a {
+    font-size: 20px;
+  }
 
-    /* ########### Carousel ############## */
-    .fa-chevron-left{
-        transform: translateX(-2rem);
-        top: 7rem;   
-    }
-    .fa-chevron-right{
-        top: 7rem;
-        transform: translateX(2rem);    
-    }
-    .caption{
-        top: 13em;
-        left: 10rem;
-    }
-    /* ######### About Section #########3 */
-    .counder_areaIV{
-        max-width: 80%;
-    }
-    
+  /* ########### Carousel ############## */
+  .fa-chevron-left {
+    transform: translateX(-2rem);
+    top: 7rem;
+  }
+  .fa-chevron-right {
+    top: 7rem;
+    transform: translateX(2rem);
+  }
+  .caption {
+    top: 13em;
+    left: 10rem;
+  }
+  /* ######### About Section #########3 */
+  .counder_areaIV {
+    max-width: 80%;
+  }
 }
-@media screen and (max-width:850px){
-.caption{
+@media screen and (max-width: 850px) {
+  .caption {
     left: 5rem;
-}
+  }
 }
 /* =================================================== vivew-port = 768px ======================================== */
 
-@media screen and (max-width:768px){
-    .index_contact{
-        right: -9.50%;
-    }
-    section{
-        max-width: 85%;   
-    }
-    /* ======Top Header  */
-    .contact span, .social span{
-        font-size: 13px;
-    }
-    .nav_menu a{
-        font-size: 18px;
-    }
+@media screen and (max-width: 768px) {
+  .index_contact {
+    right: -9.5%;
+  }
+  section {
+    max-width: 85%;
+  }
+  /* ===================================Top Header  ========================*/
+  .contact span,
+  .social span {
+    font-size: 13px;
+  }
+  .nav_menu a {
+    font-size: 18px;
+  }
 
-    /* ############## carousel ######### */
-    .fa-chevron-left{
-        display: none;
-    }
-    .fa-chevron-right{
-        display: none;
-    }
-    .carousel-control-prev{
-        display: none;
-    }
-    .carousel-control-next{
-        display: none;
-    }
-    .caption{
-        left: 9rem;
-    }
-    .caption h1{
-        font-size: 3.4rem;
-    }
-    .counder_areaIV{
-        max-width: 85%;
-    }
-    
+  /* ################################# carousel ############################# */
+  .fa-chevron-left {
+    display: none;
+  }
+  .fa-chevron-right {
+    display: none;
+  }
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .caption {
+    left: 9rem;
+  }
+  .caption h1 {
+    font-size: 3.4rem;
+  }
+  .counder_areaIV {
+    max-width: 85%;
+  }
 }
 
-@media screen and (max-width:660px){
-.index_contact{
-        right: -10.50%;
-    }
-.caption{
+@media screen and (max-width: 660px) {
+  .index_contact {
+    right: -10.5%;
+  }
+  .caption {
     left: 5rem;
-}
+  }
 }
 /* =================================================== vivew-port = 576px ======================================== */
 
-@media screen and (max-width:576px){
-    .index_contact{
-        right: -12%;
-    }
-    section{
-        max-width:  95%;
-        width: 100%;
-    }
-    .calling-social{
-        /* border: 1px solid white; */
-        display: inline-block !important;
-        text-align: center;
-    }
-    .social{
-        /* border: 2px solid red; */
-        display: inline-block !important;
-        text-align: center !important;
-    }
-    .nav_menu a{
-        font-size: 16px;
-    }
-    .caption{
-        left: -3rem;
-    }
-    .caption h3
-    {
-        font-size: 2.5rem;
-    }
-    /* ######## About-section ######### */
-    .card_body h2{
-        line-height: 2.5rem;
-        /* font-weight: 400; */
-        letter-spacing: 0.6px;
-        font-size: 1.4rem;
-    }
+@media screen and (max-width: 576px) {
+  .index_contact {
+    right: -12%;
+  }
+  section {
+    max-width: 95%;
+    width: 100%;
+  }
+  .calling-social {
+    /* border: 1px solid white; */
+    display: inline-block !important;
+    text-align: center;
+  }
+  .social {
+    /* border: 2px solid red; */
+    display: inline-block !important;
+    text-align: center !important;
+  }
+  .nav_menu a {
+    font-size: 16px;
+  }
+  .caption {
+    left: -3rem;
+  }
+  .caption h3 {
+    font-size: 2.5rem;
+  }
+  /* ######## About-section ######### */
+  .card_body h2 {
+    line-height: 2.5rem;
+    letter-spacing: 0.6px;
+    font-size: 1.4rem;
+  }
 
-    .card-body{
-        padding: 1rem 2rem;
-    }
-    .hovercard-box .hovercard-dis {
-        margin-bottom: 16%;
-    }
-    .hovercard-bottom {
-        flex-direction: column !important;
-
-      }
-      .hovercard-icon-container {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-      }
-      .CounterII{
-        max-width: 95%;
-        width: 100%;
-        margin: auto;
-      }
-/* ============== */
-    .counder_area{
-        padding: 1rem 0;
-    }
-    .counder_area .Counter-tittle h1{
-        font-size: 3rem;
-        margin: 0 0 8px;
-    }
-    .counder_area .Counter-tittle p{
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-    }
-    .counder_area .Counter-tittle a{
-        font-size: 1.4rem;
-    }
-    .counder_area .Counter-tittle .btn_{
-        padding: 1.8rem 2rem;
-        
-    }
-    /* ============= counter IV ========== */
-    .counder_areaIV{
-        max-width: 95%;
-        box-sizing: border-box;
-    }
-    .counder_areaIV .Counter-tittle h1{
-        font-size: 3rem;
-    }
-    .counder_areaIV .Counter-tittle p{
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-    }
-    .counder_areaIV .Counter-tittle a{
-        font-size: 1.4rem;
-    }
-    .counder_areaIV .Counter-tittle .btn_{
-        padding: 1.8rem 2rem;
-        /* overflow-x: hidden; */
-        box-sizing: border-box;
-        
-    }
-    /* ================== Footer ============ */
-    footer ul li a{
-        font-size: 1.4rem;
-    }
-    .footer_bottom p {
-        font-size: 1.4rem;
-    }
+  .card-body {
+    padding: 1rem 2rem;
+  }
+  .hovercard-box .hovercard-dis {
+    margin-bottom: 16%;
+  }
+  .hovercard-bottom {
+    flex-direction: column !important;
+  }
+  .hovercard-icon-container {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .CounterII {
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+  }
+  /* ============== */
+  .counder_area {
+    padding: 1rem 0;
+  }
+  .counder_area .Counter-tittle h1 {
+    font-size: 3rem;
+    margin: 0 0 8px;
+  }
+  .counder_area .Counter-tittle p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+  .counder_area .Counter-tittle a {
+    font-size: 1.4rem;
+  }
+  .counder_area .Counter-tittle .btn_ {
+    padding: 1.8rem 2rem;
+  }
+  /* ============= counter IV ========== */
+  .counder_areaIV {
+    max-width: 95%;
+    box-sizing: border-box;
+  }
+  .counder_areaIV .Counter-tittle h1 {
+    font-size: 3rem;
+  }
+  .counder_areaIV .Counter-tittle p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+  .counder_areaIV .Counter-tittle a {
+    font-size: 1.4rem;
+  }
+  .counder_areaIV .Counter-tittle .btn_ {
+    padding: 1.8rem 2rem;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+  }
+  /* ================== Footer ============ */
+  footer ul li a {
+    font-size: 1.4rem;
+  }
+  .footer_bottom p {
+    font-size: 1.4rem;
+  }
 }
 /* =================================================== vivew-port = 479px ======================================== */
 
-@media screen and (max-width:479px){
-    .index_contact{
-        right: -15%;
-    }
-    section{
-        max-width: 95%;
-        width: 100%;
-    }
-    .caption h1 {
-        font-size: 3rem;
-    }
-    .caption .btn_{
-        padding: 14px 25px;
-    }
-    .nav_menu a{
-        font-size: 14px;
-    }
-    /* ===== Carousel ==== */
-    .carousel img{
-        object-fit:cover;
-        object-position: 45%;
-    }
-    .close_icon{
-        right: 5px;
-    }
-    .caption{
-        top: 8rem;
-        left: -4rem;
-    }
-    .card_body h2{
-        /* font-size: 1.2rem; */
-        line-height: 3rem;
-    }
-    .card_body h2{
-        line-height: 2.5rem;
-        /* font-weight: 400; */
-        letter-spacing: 0.6px;
-        font-size: 1.4rem;
-    }
+@media screen and (max-width: 479px) {
+  .index_contact {
+    right: -15%;
+  }
+  section {
+    max-width: 95%;
+    width: 100%;
+  }
+  .caption h1 {
+    font-size: 3rem;
+  }
+  .caption .btn_ {
+    padding: 14px 25px;
+  }
+  .nav_menu a {
+    font-size: 14px;
+  }
+  /* ===== Carousel ==== */
+  .carousel img {
+    height: 70vh;
+    object-fit: cover;
+    object-position: 45%;
+  }
+  .main-enquire-wrapper .enquire-wrapper{
+    top: -5%;
+  }
+  .close_icon {
+    right: 5px;
+  }
+  .caption {
+    top: 8rem;
+    left: -4rem;
+  }
+  .card_body h2 {
+    /* font-size: 1.2rem; */
+    line-height: 3rem;
+  }
+  .card_body h2 {
+    line-height: 2.5rem;
+    /* font-weight: 400; */
+    letter-spacing: 0.6px;
+    font-size: 1.4rem;
+  }
 
-    .card-body{
-        padding: 1rem 2rem;
-    }
-    .hovercard-box .hovercard-dis {
-        margin-bottom: 16%;
-    }
-    .hovercard-bottom {
-        flex-direction: column !important;
+  .card-body {
+    padding: 1rem 2rem;
+  }
+  .hovercard-box .hovercard-dis {
+    margin-bottom: 16%;
+  }
+  .hovercard-bottom {
+    flex-direction: column !important;
+  }
+  .hovercard-icon-container {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .CounterII {
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+  }
+  /* ============== */
+  .counder_area {
+    padding: 1rem 0;
+  }
+  .counder_area .Counter-tittle h1 {
+    font-size: 3rem;
+    margin: 0 0 8px;
+  }
+  .counder_area .Counter-tittle p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+  .counder_area .Counter-tittle a {
+    font-size: 1.4rem;
+  }
+  .counder_area .Counter-tittle .btn_ {
+    padding: 1.8rem 2rem;
+  }
+  /* ============= counter IV ========== */
 
-      }
-      .hovercard-icon-container {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-      }
-      .CounterII{
-        max-width: 95%;
-        width: 100%;
-        margin: auto;
-      }
-/* ============== */
-    .counder_area{
-        padding: 1rem 0;
-    }
-    .counder_area .Counter-tittle h1{
-        font-size: 3rem;
-        margin: 0 0 8px;
-    }
-    .counder_area .Counter-tittle p{
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-    }
-    .counder_area .Counter-tittle a{
-        font-size: 1.4rem;
-    }
-    .counder_area .Counter-tittle .btn_{
-        padding: 1.8rem 2rem;
-        
-    }
-    /* ============= counter IV ========== */
-   
-    .counder_areaIV .Counter-tittle p{
-        font-size: 1.4rem;
-        letter-spacing: 2px;
-    }
-    .counder_areaIV .Counter-tittle a{
-        font-size: 1.4rem;
-    }
-    .counder_areaIV .Counter-tittle .btn_{
-        padding: 1.8rem 2rem;
-        
-    }
-    
+  .counder_areaIV .Counter-tittle p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+  .counder_areaIV .Counter-tittle a {
+    font-size: 1.4rem;
+  }
+  .counder_areaIV .Counter-tittle .btn_ {
+    padding: 1.8rem 2rem;
+  }
 }
 /* =================================================== vivew-port = 400px ======================================== */
 
-@media screen and (max-width:400px){
-    .index_contact{
-        right: -18%;
-    }
-    
+@media screen and (max-width: 400px) {
+  .index_contact {
+    right: -18%;
+  }
 }
-@media screen and (max-width:300px){
-    
-    section{
-        max-width: 100%;
-        width: 100%;
-        margin: auto;
-    }
-    .counder_areaIV .Counter-tittle h1{
-        font-size: 3rem;
-    }
+@media screen and (max-width: 300px) {
+  section {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  .counder_areaIV .Counter-tittle h1 {
+    font-size: 3rem;
+  }
 }
