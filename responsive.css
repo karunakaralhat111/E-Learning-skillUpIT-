@@ -234,7 +234,7 @@
   }
   /* ===== Carousel ==== */
   .carousel img {
-    height: 70vh;
+    height: 68vh;
     object-fit: cover;
     object-position: 45%;
   }
