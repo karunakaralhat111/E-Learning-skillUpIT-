@@ -30,6 +30,17 @@
     margin: auto;
     box-sizing: border-box;
   }
+  .hovercard-box h3{
+    font-size: 2.4rem;
+  }
+  .hovercard-bottom{
+    display: flex;
+    flex-direction: column !important;
+    /* border: 1px solid red; */
+  }
+  .hovercard-bottom .hovercard-icon-container{
+    margin-bottom: 1rem;
+  }
 }
 /* =================================================== vivew-port = 991px ======================================== */
 @media screen and (max-width: 991px) {
@@ -56,6 +67,12 @@
   /* ######### About Section #########3 */
   .counder_areaIV {
     max-width: 80%;
+  }
+  /* =========== Module card ============ */
+
+  .hovercard-bottom{
+    display: flex;
+    /* flex-direction: row !important; */
   }
 }
 @media screen and (max-width: 850px) {
@@ -102,6 +119,11 @@
   }
   .counder_areaIV {
     max-width: 85%;
+  }
+  .hovercard-bottom{
+    display: flex;
+    flex-direction: row !important;
+    /* border: 1px solid red; */
   }
 }
 

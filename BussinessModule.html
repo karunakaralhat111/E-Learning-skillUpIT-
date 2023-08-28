@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="fundamental.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
+    
     <title>SkillUp IT Academy : An IT Training Institute</title>
 </head>
 
@@ -127,16 +128,14 @@
                             <img src="images/logo.png" class="img-fluid mt-3 ">
                         </div>
                         <div class="nav_menu_container">
-                            <div class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4"
-                                onclick="redirectToLink('http://127.0.0.1:5500/Fundamentalmodule.html')">
-                                <a href="Fundamentalmodule.html" class="text-white fw-bold collapsed">fundamental
-                                    Moduls</a>
+                            <div class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4"onclick="redirectToLink('http://127.0.0.1:5500/Fundamentalmodule.html')">
+                                <a href="Fundamentalmodule.html" class="text-white fw-bold  collapsed">fundamental
+                                    moduls</a>
                             </div>
 
-                            <div class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 "
-                                onclick="redirectToLink('http://127.0.0.1:5500/BussinessModule.html')">
-                                <a href="BussinessModule.html" class="text-white fw-bold collapsed"> Business Modules
-                                </a>
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 "onclick="redirectToLink('http://127.0.0.1:5500/BussinessModule.html')">
+                                <a href="BussinessModule.html" class="text-white fw-bold collapsed"> Business Modules </a>
                             </div>
 
                             <div
@@ -180,162 +179,60 @@
         </div>
     </div>
 
-    <!-- ################## Carousel ########################### -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/hero_slider_bg_1.jpg" class="d-block w-100 img-fluid slideimg" alt="...">
-                <div class="caption d-flex flex-column flex-wrap  animate__animated animate__fadeInUp ">
-
-                    <h1><span class="text my-3">Skill</span>Up <span class="text">IT</span> Academy</h1>
-                    <h3 class="my-3  ">University, College, School Syllabus
-                        Education
-                    </h3>
-                    <a href="#" class="btn_ enquire_btn" onclick="handleform()">Enquire Now</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="images/hero_slider_bg_2.jpg" class="d-block w-100 img-fluid slideimg" alt="...">
-                <div class="caption  d-flex flex-column flex-wrap animate__animated animate__fadeInUp ">
-                    <h1 class=" "><span class="text my-3">Skill</span>Up <span class="text">IT</span>Academy</h1>
-                    <h3 class="my-3  ">Education Needs Complete Solution</h3>
-                    <a href="#" class="btn_ enquire_btn" onclick="handleform()">Enquire Now</a>
-                </div>
-            </div>
-
-            <div class="main-enquire-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 enquire-wrapper">
-                            <form class="p-4 enquire_form">
-                                <div class="mb-3 text-end">
-                                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
-                                </div>
-                                <div class="mb-3 formtittle ">
-                                    <h2>Please enter your details</h2>
-                                </div>
-                                <div class="mb-3 ">
-                                    <label for="Username" class="form-label ">Name:</label>
-                                    <input type="text" class="form-control  p-3" id="Username" required>
-                                </div>
-                                <div class="mb-3 ">
-                                    <label for="Password" class="form-label ">Email ID:</label>
-                                    <input type="email" class="form-control  p-3" id="Password" required>
-                                </div>
-                                <div class="mb-3 ">
-                                    <label for="Password" class="form-label">Mobile No:</label>
-                                    <input type="tel" class="form-control  p-3" id="Password" required>
-                                </div>
-                                <div class="mb-3 text-center ">
-                                    <button class="btn_ form_login_btn" type="submit">Apply</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <i class=" fas fa-chevron-left" aria-hidden="true"></i>
-            <!-- <span class="visually-hidden">Previous</span> -->
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <i class=" fas fa-chevron-right" aria-hidden="true"></i>
-            <!-- <span class="visually-hidden">Next</span> -->
-        </button>
-    </div>
-    <!-- #################### About Section ######################### -->
-
-    <section class="about">
-        <div class="title col-12 text-center ">
-            <h1 data-aos="fade-up">About <span class="text">US</span></h1>
-        </div>
+    <!-- ################## Hero section ########################### -->
+    <div class="herosection herosection3" id="carouselExampleFade">
         <div class="container">
-            <div class="row p-2">
-                <div class="card_wrapper">
-                    <div class="col-lg-6">
-                        <div class="card" data-aos="fade-up">
-                            <div class="card_head">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
-                            </div>
-                            <div class="card_body">
-                                <h2 data-aos="fade-right">We at SkillUp IT Academy ensure that students are not only
-                                    getting trained, educated
-                                    in IT subjects or programming languages but also getting skilled so that they can
-                                    explore knowledge and create new opportunities, innovation in this competitive and
-                                    dynamic world.
-                                </h2>
-                            </div>
-                            <div class="card_footer">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
-                            </div>
-                        </div>
-
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class=" caption">
+                        <h1 data-aos="fade-up"><span class="text my-3">Skill</span>Up <span class="text">IT</span>
+                            Academy</h1>
+                        <h3 class="my-3 ">Bussiness Modules</h3>
+                        <a href="#" class="btn_ enquire_btn" onclick="handleform()" data-aos="fade-up">Apply Now</a>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card" data-aos="fade-up">
-                            <div class="card_head">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
-                            </div>
-                            <div class="card_body">
-                                <h2 data-aos="fade-right">We at SkillUp IT Academy work on to build platform where skill
-                                    and ability can match
-                                    up to build bright future of current and future generations. We believe in training
-                                    where we train students to explore knowledge rather than settle on the existing
-                                    skills they have.
-                                </h2>
-                            </div>
-                            <div class="card_footer">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="card" data-aos="fade-up">
-                            <div class="card_head">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
-                            </div>
-                            <div class="card_body">
-                                <h2 data-aos="fade-right">Through our extensive feedback-oriented training, practice,
-                                    assignments, projects we
-                                    ensure to achieve our company's objectives, values, mission and belief towards kids,
-                                    students, professionals who aim IT as their dream career and prospects.
-                                </h2>
-                            </div>
-                            <div class="card_footer">
-                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" alt="profilelogo">
-                                <p>skillupitacademy</p>
+                </div>
+                <div class="main-enquire-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 enquire-wrapper">
+                                <form class="p-4 enquire_form">
+                                    <div class="mb-3 text-end">
+                                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                                    </div>
+                                    <div class="mb-3 formtittle ">
+                                        <h2>Please enter your details</h2>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Username" class="form-label ">Name:</label>
+                                        <input type="text" class="form-control  p-3" id="Username" required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Password" class="form-label ">Email ID:</label>
+                                        <input type="email" class="form-control  p-3" id="Password" required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Password" class="form-label">Mobile No:</label>
+                                        <input type="tel" class="form-control  p-3" id="Password" required>
+                                    </div>
+                                    <div class="mb-3 text-center ">
+                                        <button class="btn_ form_login_btn" type="submit">Apply</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
-    </section>
-    <!-- #################### About Section-End ######################### -->
-    <!-- #################### Our MOdul Section-Start ######################### -->
+    </div>
+    <!-- #################### Hero Section-Start ######################### -->
+    <!-- ========================= Fundamental Modul ====================== -->
     <section class="ourmodule mt-5 mb-5 py-5 text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Our</span>
+                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span
+                            class="text">Business</span>
                         Modules
                     </h1>
                 </div>
@@ -343,14 +240,13 @@
 
             <div class="row">
                 <div class="cardbox-row d-flex justify-content-lg-center flex-wrap">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
                         <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box purple">
+                            <div class="hovercard-box dark_purple">
                                 <button>Any Stream</button>
-                                <h3>Fundamental Module</h3>
+                                <h3>Advance Excel</h3>
                                 <p class="hovercard-dis">
-                                    Success is the natural consequence of consistently applying the basic
-                                    fundamentals.
+                                    Excel has its immense purposeful applications. Through his post we look at the most...
                                 </p>
                                 <div class="hovercard-bottom d-flex justify-content-between align-items-center">
                                     <div class="hovercard-icon-container">
@@ -361,12 +257,12 @@
                                         <span><i class="fa-solid fa-star"></i></span>
                                     </div>
                                     <div class="hovercard-btn-container">
-                                        <a href="Fundamentalmodule.html" class="btn_">FOR MORE DETAILS</a>
+                                        <a  class="btn_" onclick="handleform()">CLICK TO ENQUIRE</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-img">
-                                <img src="images/fundamental.jpg" alt="fundamental_img">
+                                <img src="images/Excel.webp" alt="fundamental_img">
                             </div>
                             <div class="card-certificate-badge">
                                 <span class="badge"> </span>
@@ -379,27 +275,27 @@
                                     <p class="mt-4">Any Stream</p>
                                 </div>
                                 <div class="card-tittle">
-                                    <h1>Fundamental Module</h1>
+                                    <h1>Advance Excel</h1>
                                 </div>
                                 <div class="card_footer">
                                     <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
                                     <p>skillupitacademy</p>
                                 </div>
                                 <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Programming</a> -->
-                                    <span>Core Programming</span>
+                                    <!-- <a href="#">Information Management System</a> -->
+                                    <span>Information Management System</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
                         <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box yellow">
-                                <button>Any Stream</button>
-                                <h3>Webdesign Module</h3>
+                            <div class="hovercard-box dark-blue">
+                                <button>Any Commerce Stream</button>
+                                <h3>Tally</h3>
                                 <p class="hovercard-dis">
-                                    What separates design from art is that design is meant to be... functional.
+                                    Tally is an on-premise accounting solution that caters primarily to small and midsize...
                                 </p>
                                 <div class="hovercard-bottom d-flex justify-content-between align-items-center">
                                     <div class="hovercard-icon-container">
@@ -411,12 +307,61 @@
 
                                     </div>
                                     <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
+                                        <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-img">
-                                <img src="images/webdesign.jpg" alt="fundamental_img">
+                                <img src="images/Tally.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">Any Commerce Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Tally</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Accounting Module</a> -->
+                                    <span>Accounting Module</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                        <div class="card-box" data-aos="fade-up">
+                            <div class="hovercard-box pink">
+                                <button>Any Stream</button>
+                                <h3>Microsoft Office</h3>
+                                <p class="hovercard-dis">
+                                    Practical Microsoft Office courses on Excel, Word, PowerPoint, Outlook, Project ...
+                                </p>
+                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/microsoftoffice.webp" alt="fundamental_img">
                             </div>
                             <div class="card-certificate-badge">
                                 <span class="badge"> </span>
@@ -429,27 +374,26 @@
                                     <p class="mt-4">Any Stream</p>
                                 </div>
                                 <div class="card-tittle">
-                                    <h1>Webdesign Module</h1>
+                                    <h1>Microsoft Office</h1>
                                 </div>
                                 <div class="card_footer">
                                     <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
                                     <p>skillupitacademy</p>
                                 </div>
                                 <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Designing</a> -->
-                                    <span>Core Designing</span>
+                                    <!-- <a href="#">Office Productivity Module</a> -->
+                                    <span>Office Productivity Module</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
                         <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box red">
+                            <div class="hovercard-box dark-green">
                                 <button>Any Stream</button>
-                                <h3>Bussiness Module</h3>
+                                <h3>SQL</h3>
                                 <p class="hovercard-dis">
-                                    Excel at doing what your passion is and only focus on perfecting it.
+                                    SQL stands for Structured Query Language. SQL is used to communicate with a...
                                 </p>
                                 <div class="hovercard-bottom d-flex justify-content-between align-items-center">
                                     <div class="hovercard-icon-container">
@@ -460,12 +404,12 @@
                                         <span><i class="fa-solid fa-star"></i></span>
                                     </div>
                                     <div class="hovercard-btn-container">
-                                        <a href="BussinessModule.html" class="btn_">FOR MORE DETAILS</a>
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-img">
-                                <img src="images/bussiness.jpg" alt="fundamental_img">
+                                <img src="images/SQLII.webp" alt="fundamental_img">
                             </div>
                             <div class="card-certificate-badge">
                                 <span class="badge"> </span>
@@ -478,215 +422,125 @@
                                     <p class="mt-4">Any Stream</p>
                                 </div>
                                 <div class="card-tittle">
-                                    <h1>Bussiness Module</h1>
+                                    <h1>SQL</h1>
                                 </div>
                                 <div class="card_footer">
                                     <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
                                     <p>skillupitacademy</p>
                                 </div>
                                 <div class="card_footer_btn">
-                                    <!-- <a href="#">Bussiness Module</a> -->
-                                    <span>Bussiness Module</span>
+                                    <!-- <a href="#">Information Management System</a> -->
+                                    <span>Information Management System</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                        <div class="card-box" data-aos="fade-up">
+                            <div class="hovercard-box light-green">
+                                <button>Any Stream</button>
+                                <h3>Tableau</h3>
+                                <p class="hovercard-dis">
+                                    Tableau is a powerful and fastest growing data visualization tool used in the Business...
+                                </p>
+                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/tablu.webp" alt="C#_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">Any Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Tableau</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Analytics Tool</a> -->
+                                    <span>Analytics Tool</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3">
+                        <div class="card-box" data-aos="fade-up">
+                            <div class="hovercard-box neon">
+                                <button>Any Stream</button>
+                                <h3>Digital Marketing</h3>
+                                <p class="hovercard-dis">
+                                    Digital marketing is the use of the Internet to reach consumers. Digital marketing is a...
+                                </p>
+                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/Digital-marketing.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">Any Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Digital Marketing</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Business Module</a> -->
+                                    <span>Business Module</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a  class="btn_ my-5" onclick="handleform()">More</a>
                 </div>
             </div>
 
         </div>
 
     </section>
-    <!-- #################### Our MOdul Section-End ######################### -->
-    <!-- ======================= Counter Area start ======================== -->
-    <div class="counder_area text-center">
-
-        <section>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12">
-                        <div class="Counter-tittle mb-1 pt-3">
-                            <h1 class="text-white m-3 pt-5" data-aos="fade-up">Start a Journey. Enroll Now.</h1>
-                            <p data-aos="fade-right"> LEARN SOMETHING WHEREVER YOU ARE</p>
-                            <a href="#" class="btn_ my-5" data-aos="fade-left">Join a Course Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- ======================= Counter Area End ======================== -->
-    <!-- #################### Our MOdul II  Section-start ######################### -->
-    <section class="ourmodule mt-5 mb-5 py-5 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Our</span>
-                        Modules
-                    </h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="cardbox-row d-flex justify-content-lg-center flex-wrap">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box blue">
-                                <button>Any Stream</button>
-                                <h3>Placement Module</h3>
-                                <p class="hovercard-dis">
-                                    Success is the natural consequence of consistently applying the basic
-                                    fundamentals.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-img">
-                                <img src="images/placement.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Placement Module</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Programming</a> -->
-                                    <span>Core Programming</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box red">
-                                <button>Any Stream</button>
-                                <h3>Infrastructure Modules</h3>
-                                <p class="hovercard-dis">
-                                    What separates design from art is that design is meant to be... functional.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-img">
-                                <img src="images/couldcomputing.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate ms-2"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Infrastructure Modules</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Programming</a> -->
-                                    <span>Core Programming</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box red">
-                                <button>Any Stream</button>
-                                <h3>Testing Module</h3>
-                                <p class="hovercard-dis">
-                                    Excel at doing what your passion is and only focus on perfecting it.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-img">
-                                <img src="images/testing.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Testing Module</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Bussiness Module</a> -->
-                                    <span>Bussiness Module</span>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- #################### Our MOdul II  Section-End ######################### -->
+    <!-- #################### Fundametal Modul-End ######################### -->
     <!--#################### Counter Area II section start #######################   -->
     <div class="CounterII text-center">
         <section>
@@ -695,30 +549,30 @@
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="counterII_img_container" data-aos="fade-right">
                             <img src="images/counter_icon1.png" class="img-fluid" alt="">
-                            <h2>100+ Topics</h2>
-                            <p>LEARN ANYTHING</p>
+                            <h2>216.67%</h2>
+                            <p>MAX SALARY HIKE</p>
                         </div>
 
                     </div>
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="counterII_img_container" data-aos="fade-up">
                             <img src="images/counter_icon2.png" class="img-fluid" alt="">
-                            <h2>1900+ Students</h2>
-                            <p>FUTURE GENIUS</p>
+                            <h2>91.62%</h2>
+                            <p>AVERAGE SALARY HIKE</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="counterII_img_container" data-aos="fade-down">
                             <img src="images/counter_icon3.png" class="img-fluid" alt="">
-                            <h2>15900 Tests Taken</h2>
-                            <p>THATS A LOT</p>
+                            <h2>96%</h2>
+                            <p>PLACEMENT SUCCESS RATE</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 col-md-6">
                         <div class="counterII_img_container" data-aos="fade-left">
-                            <img src="images/counter_icon4.png" class="img-fluid" alt="">
-                            <h2>10+ Instructors</h2>
-                            <p>ALL TRAINED PROFESSIONALS</p>
+                            <img src="images/counter_icon3.png" class="img-fluid" alt="">
+                            <h2>45</h2>
+                            <p>NO. OF COMPANIES</p>
                         </div>
                     </div>
                 </div>
@@ -726,7 +580,7 @@
         </section>
     </div>
     <!--#################### Counter Area II section End #######################   -->
-    <!--#################### Counter Area II Section Start ###################  -->
+    <!-- ======================= Counter Area start ======================== -->
     <div class="counder_area text-center">
 
         <section>
@@ -734,205 +588,316 @@
                 <div class="row ">
                     <div class="col-12">
                         <div class="Counter-tittle mb-1 pt-3">
-                            <h1 class="text-white m-3 pt-5" data-aos="fade-up">Learning Today. Leading Tomorrow. Enroll
+                            <h1 class="text-white m-3 pt-5" data-aos="fade-up">Creative Thinking & Innovation. Enroll
                                 Now.</h1>
-                            <p data-aos="fade-right"> LEARN SOMETHING WHEREVER YOU ARE</p>
-                            <a href="#" class="btn_ my-5" data-aos="fade-left">Join a Course Now</a>
+                            <p data-aos="fade-right">LEARN SOMETHING WHEREVER YOU ARE</p>
+                            <a href="#" class="btn_ my-5" data-aos="fade-left">JOIN A COURSE NOW</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <!--#################### Counter Area III Section End ###################  -->
-    <!-- #################### Our MOdul III  Section-start ######################### -->
-    <section class="ourmodule mt-5 mb-5 py-5 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Our</span>
-                        Modules
-                    </h1>
-                </div>
+    <!-- ======================= Counter Area End ======================== -->
+    <!--======================== Card Slider start ========================  -->
+    <div class="carousel-card-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Related</span>
+                    Courses </h1>
             </div>
-            <div class="row">
-                <div class="cardbox-row d-flex justify-content-lg-center flex-wrap">
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box pink">
-                                <button>Any Stream</button>
-                                <h3>Data Science & Visualization </h3>
-                                <p class="hovercard-dis">
-                                    Success is the natural consequence of consistently applying the basic
-                                    fundamentals.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-img">
-                                <img src="images/placement.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Data Science & Visualization</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Programming</a> -->
-                                    <span>Core Programming</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box green">
-                                <button>Any Stream</button>
-                                <h3>Cyber Security & Bitcoin Modules</h3>
-                                <p class="hovercard-dis">
-                                    What separates design from art is that design is meant to be... functional.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-img">
-                                <img src="images/couldcomputing.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate ms-2"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Cyber Security & Bitcoin</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Core Programming</a> -->
-                                    <span>Core Programming</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                        <div class="card-box" data-aos="fade-up">
-                            <div class="hovercard-box purple">
-                                <button>Any Stream</button>
-                                <h3>Trending Courses</h3>
-                                <p class="hovercard-dis">
-                                    Success is the natural consequence of consistently applying the basic
-                                    fundamentals.
-                                </p>
-                                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                                    <div class="hovercard-icon-container">
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                        <span><i class="fa-solid fa-star"></i></span>
-                                    </div>
-                                    <div class="hovercard-btn-container">
-                                        <a href="#" class="btn_">FOR MORE DETAILS</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-img">
-                                <img src="images/testing.jpg" alt="fundamental_img">
-                            </div>
-                            <div class="card-certificate-badge">
-                                <span class="badge"> </span>
-                                <span class="certificate"></span>
-                            </div>
-                            <div class="card-body">
-                                <div class="btncontainer">
-                                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                                        FEATURED</a>
-                                    <p class="mt-4">Any Stream</p>
-                                </div>
-                                <div class="card-tittle">
-                                    <h1>Trending Courses</h1>
-                                </div>
-                                <div class="card_footer">
-                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                                    <p>skillupitacademy</p>
-                                </div>
-                                <div class="card_footer_btn">
-                                    <!-- <a href="#">Bussiness Module</a> -->
-                                    <span>Bussiness Module</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-    </section>
-    <!-- #################### Our MOdul III  Section-End ######################### -->
-    <!-- ======================= Counter Area IV start ======================== -->
-    <div class="counder_areaIV text-center my-2">
-        <section>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-12">
-                        <div class="Counter-tittle mb-1 pt-3">
-                            <h1 class="m-3 pt-5" data-aos="fade-up">Discover Your Future With US. Enroll Now.</h1>
-                            <p data-aos="fade-right"> LEARN SOMETHING WHEREVER YOU ARE</p>
-                            <a href="#" class="btn_ my-5" data-aos="fade-left">Join a Course Now</a>
+    </div>
+    <div class="sliderbox">
+    <section class="card-slider">
+        <div id="carouselexamplefade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselexamplecaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselexamplecaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active">    
+                    <div class="carousel-card-wrapper d-flex flex-wrap">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card-box" data-aos="fade-up">
+                                <div class="hovercard-box blue">
+                                    <button>All Graduates Stream</button>
+                                    <h3>MERN - JavaScript Framework</h3>
+                                    <p class="hovercard-dis">
+                                        Full Stack 3-Tier Application Development 
+                                    <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                    </p>
+                                    
+                                    <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                        <div class="hovercard-icon-container">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+    
+                                        </div>
+                                        <div class="hovercard-btn-container">
+                                            <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/mean stack1 card.webp" alt="fundamental_img">
+                                </div>
+                                <div class="card-certificate-badge">
+                                    <span class="badge"> </span>
+                                    <span class="certificate"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btncontainer">
+                                        <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                            FEATURED</a>
+                                        <p class="mt-4">All Graduates Stream</p>
+                                    </div>
+                                    <div class="card-tittle">
+                                        <h1>MERN STACK Development</h1>
+                                    </div>
+                                    <div class="card_footer">
+                                        <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                        <p>skillupitacademy</p>
+                                    </div>
+                                    <div class="card_footer_btn">
+                                        <!-- <a href="#">Open Source Solution</a> -->
+                                        <span>Open Source Solution</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card-box" data-aos="fade-up">
+                                <div class="hovercard-box yellow">
+                                    <button>All Graduates Stream</button>
+                                    <h3>Full Stack Development - .NET</h3>
+                                    <p class="hovercard-dis">
+                                        Cross Platform Development Solution 
+                                    <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                    </p>
+                                    
+                                    <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                        <div class="hovercard-icon-container">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+    
+                                        </div>
+                                        <div class="hovercard-btn-container">
+                                            <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/full-stack dot net.webp" alt="fundamental_img">
+                                </div>
+                                <div class="card-certificate-badge">
+                                    <span class="badge"> </span>
+                                    <span class="certificate"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btncontainer">
+                                        <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                            FEATURED</a>
+                                        <p class="mt-4">All Graduates Stream</p>
+                                    </div>
+                                    <div class="card-tittle">
+                                        <h1>Full Stack Development-.NET</h1>
+                                    </div>
+                                    <div class="card_footer">
+                                        <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                        <p>skillupitacademy</p>
+                                    </div>
+                                    <div class="card_footer_btn">
+                                        <!-- <a href="#">International Certification*</a> -->
+                                        <span>International Certification*</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card-box" data-aos="fade-up">
+                                <div class="hovercard-box red">
+                                    <button>All Graduates Stream</button>
+                                    <h3>Full Stack Modules - Python</h3>
+                                    <p class="hovercard-dis">AI-Based App Development <br> Solution 
+                                    <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                    </p>
+                                    
+                                    <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                        <div class="hovercard-icon-container">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+    
+                                        </div>
+                                        <div class="hovercard-btn-container">
+                                            <a  class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/full stack python.webp" alt="fundamental_img">
+                                </div>
+                                <div class="card-certificate-badge">
+                                    <span class="badge"> </span>
+                                    <span class="certificate"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btncontainer">
+                                        <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                            FEATURED</a>
+                                        <p class="mt-4">All Graduates Stream</p>
+                                    </div>
+                                    <div class="card-tittle">
+                                        <h1>Full Stack Modules - Python</h1>
+                                    </div>
+                                    <div class="card_footer">
+                                        <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                        <p>skillupitacademy</p>
+                                    </div>
+                                    <div class="card_footer_btn">
+                                        <!-- <a href="#">International Certification*</a> -->
+                                        <span>International Certification*</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="carousel-card-wrapper d-flex flex-md-row flex-column">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card-box" data-aos="fade-up">
+                                <div class="hovercard-box green">
+                                    <button>All Graduates Stream</button>
+                                    <h3>MEAN Stack Development</h3>
+                                    <p class="hovercard-dis">Cloud Ready Development Solution 
+                                    <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                    </p>
+                                    
+                                    <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                        <div class="hovercard-icon-container">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+    
+                                        </div>
+                                        <div class="hovercard-btn-container">
+                                            <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/mean stack2 card.webp" alt="fundamental_img">
+                                </div>
+                                <div class="card-certificate-badge">
+                                    <span class="badge"> </span>
+                                    <span class="certificate"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btncontainer">
+                                        <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                            FEATURED</a>
+                                        <p class="mt-4">All Graduates Stream</p>
+                                    </div>
+                                    <div class="card-tittle">
+                                        <h1>MEAN Stack Development</h1>
+                                    </div>
+                                    <div class="card_footer">
+                                        <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                        <p>skillupitacademy</p>
+                                    </div>
+                                    <div class="card_footer_btn">
+                                        <!-- <a href="#">Open Source Solution</a> -->
+                                        <span>Open Source Solution</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card-box" data-aos="fade-up">
+                                <div class="hovercard-box pink">
+                                    <button>All Graduates Stream</button>
+                                    <h3>Stack Development - AI</h3>
+                                    <p class="hovercard-dis">DS , ML , DL Based Development Solution 
+                                    <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                    </p>
+                                    
+                                    <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                        <div class="hovercard-icon-container">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+    
+                                        </div>
+                                        <div class="hovercard-btn-container">
+                                            <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/stack AI.webp" alt="fundamental_img">
+                                </div>
+                                <div class="card-certificate-badge">
+                                    <span class="badge"> </span>
+                                    <span class="certificate"></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="btncontainer">
+                                        <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                                            FEATURED</a>
+                                        <p class="mt-4">All Graduates Stream</p>
+                                    </div>
+                                    <div class="card-tittle">
+                                        <h1>Stack Development - AI</h1>
+                                    </div>
+                                    <div class="card_footer">
+                                        <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                                        <p>skillupitacademy</p>
+                                    </div>
+                                    <div class="card_footer_btn">
+                                        <!-- <a href="#">Cutting Edge Solution</a> -->
+                                        <span>Cutting Edge Solution</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselexamplefade" data-bs-slide="prev">
+                <i class="d-none d-md-block fas fa-chevron-left" aria-hidden="true"></i>
+                <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselexamplefade" data-bs-slide="next">
+                <i class="d-none d-md-block fas fa-chevron-right" aria-hidden="true"></i>
+                <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+        </div>
+    </section>
     </div>
-    <!-- ======================= Counter Area IV End ======================== -->
+    </div>
+
+    <!--======================== Card Slider End ========================  -->
+
     <!-- =========================== Footer ================================= -->
-    <footer class="footer">
+    <footer class="footer ">
         <section>
             <div class="container">
                 <div class="row row1">
@@ -1010,6 +975,7 @@
 
 
     <!-- ############# Bootstrap Script ################ -->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

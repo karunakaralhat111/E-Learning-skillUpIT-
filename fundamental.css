@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "proxima-nova";
+  src: url("path/to/proxima-nova-regular.woff2") format("woff2"),
+    url("path/to/proxima-nova-regular.woff") format("woff");
+}
+
+:root {
+  --scroll-color: #f54a8d;
+  --navyblue-color: #002147;
+  --navy-c-text: #133382;
+  --gray-c: #8a8a8a;
+  --card-border-c: #dee2e6;
+  --yellow-c: #fdc800;
+  --hover-yello-c: #f5b016;
+  --purple-c: #7665ff;
+  --red-c: #f20f10;
+  --blue-c: #3478f6;
+  --green-c: #0eb582;
+  --icon-c: #212529;
+  --roboto-font: "Roboto", sans-serif;
+}
+.purple {
+  background-color: var(--purple-c);
+}
+.blue {
+  background-color: #3478f6;
+}
+.yellow {
+  background-color: var(--hover-yello-c);
+}
+.red {
+  background-color: var(--red-c);
+}
+.pink {
+  background-color: var(--scroll-color);
+}
+.green {
+  background-color: var(--green-c);
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+.herosection{
+  background-image: linear-gradient(45deg, #ffffff81, #48474761),
+    url("images/fundamental_bg_hero_section.webp"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  position: relative;
+  box-sizing: border-box;
+}  
+
+.herosection .caption .btn_ {
+  width: max-content;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.herosection .caption .btn_:hover {
+  margin-top: 15px !important;
+}
+.herosection .caption {
+  box-sizing: border-box;
+}
+.herosection .caption h1 {
+  font-size: 4.8rem;
+}
+.herosection .caption h3 {
+  font-size: 3.5rem;
+}
+
+.herosection .main-enquire-wrapper .enquire-wrapper {
+  padding: 0;
+  top: 5%;
+}
+/* ================================ carousel- card =================================== */
+.carousel-card-section{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.sliderbox{
+  width: 100%;
+  padding-bottom: 5rem;
+  box-sizing: border-box;
+}
+.sliderbox .card-slider .carousel-indicators{
+  bottom: -3rem !important;
+}
+.sliderbox .card-slider .carousel-control-prev
+{
+  left: -12rem;
+  opacity: 0 !important;
+}
+.sliderbox .card-slider .carousel-control-next
+{
+  right: -12rem;
+  opacity: 0 !important;
+}
+.sliderbox:hover .carousel-control-prev,
+.sliderbox:hover .carousel-control-next{
+  opacity: 1 !important;
+} 
+
+.card-slider .carousel-inner .carousel-item .carousel-card-wrapper .hovercard-box h3{
+  font-size: 2.3rem;
+  font-family: var(--roboto-font);
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 1.5rem;
+  color: #000;
+}
+.card-slider .carousel-inner .carousel-item .carousel-card-wrapper .hovercard-box p{
+  font-size: 1.8rem;
+  margin-bottom: 0%;
+  border:none;
+  font-family: var(--roboto-font);
+}
+.card-slider .carousel-inner .carousel-item .carousel-card-wrapper .hovercard-box .hovercard-dis-II{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 2rem;
+}
+.card-slider .carousel-inner .carousel-item .carousel-card-wrapper .hovercard-box .hovercard-bottom{
+ margin-bottom: 0 !important;
+ margin-top: 20%; 
+}
+.hovercard-box{
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* =================================== Media Quire =================================== */
+
+@media screen and (max-width:1200px) {
+  .sliderbox .card-slider .carousel-control-prev
+{
+  left: -10rem;
+}
+.sliderbox .card-slider .carousel-control-next
+{
+  right: -10rem;
+}
+.sliderbox .card-slider .card-box .card-body .card-tittle h1{
+  font-size: 20px;
+}
+.sliderbox .card-slider .card-box .card-body .card_footer p{
+  font-size: 1.2rem;
+}
+.sliderbox .card-slider .card-box .card-body .card_footer_btn span{
+  font-size: 10px;
+  padding: 5px;
+}
+}
+@media screen and (max-width:991px) {
+  .sliderbox .card-slider .carousel-control-prev
+{
+  left: -7rem;
+}
+.sliderbox .card-slider .carousel-control-next
+{
+  right: -7rem;
+}
+.sliderbox .card-slider .card-box .card-body .card-tittle h1{
+  font-size: 23px;
+}
+.sliderbox .card-slider .card-box .card-body .card_footer_btn span{
+  font-size: 14px;
+  padding: 5px 15px 5px;
+}
+.sliderbox .card-slider .card-box .card-body .card_footer p{
+  font-size: 1.6rem;
+}
+}
+@media screen and (max-width: 768px) {
+  /* ===================== Hero section ============== */
+  .herosection {
+    height: 65vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* ===================== Hero section ============== */
+  .herosection {
+    height: 75vh;
+  }
+  .herosection .caption h3 {
+    font-size: 3.5rem;
+    margin-right: 1.5rem;
+  }
+}

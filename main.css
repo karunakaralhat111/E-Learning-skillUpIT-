@@ -12,15 +12,21 @@
 :root {
   --scroll-color: #f54a8d;
   --navyblue-color: #002147;
+  --navy-c-text:#133382;
   --gray-c: #8a8a8a;
   --card-border-c: #dee2e6;
   --yellow-c: #fdc800;
   --hover-yello-c: #f5b016;
   --purple-c: #7665ff;
+  --dark_purple:#9b59b6;
   --red-c: #f20f10;
   --blue-c: #3478f6;
   --green-c:#0eb582;
   --icon-c:#212529;
+  --dark-blue:#2874a6;
+  --dark-green:#196f3d;
+  --neon:#1abc9c;
+  --lightgreen:#b7950b;
   --roboto-font: "Roboto", sans-serif;
 }
 .purple {
@@ -40,6 +46,21 @@
 }
 .green{
   background-color: var(--green-c);
+}
+.dark-green{
+  background-color: var(--dark-green);
+}
+.dark_purple{
+  background-color: var(--dark_purple);
+}
+.dark-blue{
+  background-color: var(--dark-blue);
+}
+.light-green{
+  background-color: var(--lightgreen);
+}
+.neon{
+  background-color: var(--neon);
 }
 html {
   font-size: 62.5%;
@@ -205,9 +226,9 @@ h5 {
  display: flex;
  justify-content: center;
 }
- .form-wrapper{
+.form-wrapper{
   padding: 0;
-  position: absolute;
+  position: fixed;
   top: 30%;
   z-index: 2;
   display: none;
@@ -333,10 +354,10 @@ h5 {
 }
 
 /* ########################################## carousel ########################### */
-.carousel{
+ .carousel{
   box-sizing: border-box;
 }
-.carousel-item img {
+.carousel-item .slideimg {
   height: 70vh;
   opacity: 0.8;
   object-fit: cover;
@@ -371,7 +392,7 @@ h5 {
   opacity: 1;
 }
 .carousel-control-prev {
-  /* z-index: 1; */
+   z-index: 1; 
   width: 9%;
   padding: 0;
   opacity: 0;
@@ -379,7 +400,7 @@ h5 {
   cursor: default !important;
 }
 .carousel-control-next {
-  /* z-index: 1; */
+  z-index: 1;
   width: 9%;
   cursor: default !important;
   padding: 0;
@@ -404,7 +425,7 @@ h5 {
 .caption h1 {
   font-size: 6rem;
   font-weight: 700;
-  color: var(--navyblue-color);
+  color: var(--navy-c-text);
   font-family: var(--roboto-font);
 }
 .text {
@@ -433,23 +454,26 @@ h5 {
 }
 .carousel-indicators > .active {
   width: 40px;
-}
+} 
 /* ===================================== Enquire Wrapper ==================== */
 .main-enquire-wrapper .row{
   display: flex;
   justify-content: center;
   align-items:stretch;
 }
+
 .main-enquire-wrapper .enquire-wrapper{
   padding: 0;
-  position: absolute;
-  top: 2%;
+  position:fixed;
   z-index: 2;
+  top: 25% !important;
+  transform: translateY(-50%, -50%) !important;
   display: none;
   border-radius: 6px;
   transform: scale(0);
   transition: transform 0.7s ease;
 }
+
 .main-enquire-wrapper form{
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 20px;
@@ -564,14 +588,21 @@ h5 {
   /* border: 1px solid; */
 }
 /* ############################### Our Modules ################### */
+.ourmodule{
+  /* background-color: red; */
+  max-width: 100% !important;
+}
 .card-box {
   border: 1px solid var(--card-border-c);
   border-radius: 15px;
-  margin: 1.5rem;
+  margin: 1.5rem ;
   box-shadow: 10px 5px 5px lightgrey;
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  max-width: 100%;
+  /* height: 100%; */
+  max-height: 100%;
 }
 .card-box:hover {
   box-shadow: 10px 5px 5px silver;
@@ -589,11 +620,14 @@ h5 {
   width: 100%;
   height: 230px;
 }
+
 .card-img img {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   width: 100%;
   height: 100%;
+  /* max-width: 100%; */
+  /* max-width: 100%; */
 }
 
 .card-certificate-badge {
@@ -691,13 +725,13 @@ h5 {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.card_footer_btn a {
+.card_footer_btn span {
   /* margin-left: .8rem; */
   padding: 6px 15px 5px;
   border-radius: 50px;
   color: #fff;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   background-color: var(--navyblue-color);
 }
 .hovercard-box {
@@ -936,4 +970,14 @@ footer ul li a i{
 .to_top.active{
   pointer-events: auto;
   opacity: 1;
+}
+/* ========================================= business module page .herosection3 ========================= */
+.herosection3{
+  background-image: linear-gradient(45deg, #ffffff81, #48474761),url("images/bussinessmodule_hero.webp") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  position: relative;
+  box-sizing: border-box;
 }

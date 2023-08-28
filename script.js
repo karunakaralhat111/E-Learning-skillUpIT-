@@ -47,6 +47,10 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// linking pages
+ function redirectToLink(url){
+  window.location.href=url;
+ }
 // ============================================= Login Form ===========================================================
   var bottom_header_btn = document.querySelector(".bottom_header_btn");
   var form_wrapper = document.querySelector(".form-wrapper");
@@ -84,7 +88,6 @@ window.addEventListener("scroll", () => {
   var enquire_form=enquire_wrapper.querySelector(".enquire_form");
   var enqclose=enquire_form.querySelector(".close");
    function handleform(){
-    console.log('kk');
     form_wrapper.classList.remove("zoom");
     enquire_wrapper.style.display="block";
     form_wrapper.style.display="none";
@@ -106,16 +109,20 @@ let fa_chevron_left = document.querySelector(".fa-chevron-left");
 let fa_chevron_right = document.querySelector(".fa-chevron-right");
 let closebtn = navigation.querySelector(".fa-xmark");
 let top_scroll = document.querySelector(".topScroll");
-
+let card_slider =document.querySelector(".card-slider");
 fa_bars.addEventListener("click", () => {
   navigation.style.display = "block";
   carouselExampleCaptions.style.display = "none";
   bottom_header.style.display = "none";
   login_form.style.display = "none";
+  card_slider.style.display = "none";
 });
 closebtn.addEventListener("click", () => {
   navigation.style.display = "none";
   bottom_header.style.display = "block";
   carouselExampleCaptions.style.display = "block";
   login_form.style.display = "block";
+  card_slider.style.display = "block";
+
 });
+// ====================================================== Change Hero Section Background ===========================================
