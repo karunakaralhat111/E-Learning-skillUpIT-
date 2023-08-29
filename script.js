@@ -115,14 +115,14 @@ fa_bars.addEventListener("click", () => {
   carouselExampleCaptions.style.display = "none";
   bottom_header.style.display = "none";
   login_form.style.display = "none";
-  card_slider.style.display = "none";
+  // card_slider.style.display = "none";
 });
 closebtn.addEventListener("click", () => {
   navigation.style.display = "none";
   bottom_header.style.display = "block";
   carouselExampleCaptions.style.display = "block";
   login_form.style.display = "block";
-  card_slider.style.display = "block";
+  // card_slider.style.display = "block";
 
 });
 // ====================================================== Change Hero Section Background ===========================================
