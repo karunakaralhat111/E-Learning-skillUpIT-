@@ -51,6 +51,7 @@ window.addEventListener("scroll", () => {
  function redirectToLink(url){
   window.location.href=url;
  }
+ 
 // ============================================= Login Form ===========================================================
   var bottom_header_btn = document.querySelector(".bottom_header_btn");
   var form_wrapper = document.querySelector(".form-wrapper");
