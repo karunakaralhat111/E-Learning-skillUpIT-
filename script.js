@@ -128,7 +128,7 @@ closebtn.addEventListener("click", () => {
 window.onload = function () {
   let BackgroundImages = {
     hero4: "images/hero_slider_bg_1.jpg",
-    hero5:"images/placement.jpg",
+    // hero5:"images/placement.jpg",
   };
 
   // Function to change the background image of a specific hero section
@@ -151,6 +151,7 @@ window.onload = function () {
   if (currentPage.includes("WebDesigning.html")) {
     changeBackground("hero4", BackgroundImages.hero4);
   }
+};
   // else if (currentPage.includes("Placement.html")) {
   //   changeBackground("hero4", BackgroundImages.hero5);
   // }
@@ -158,4 +159,3 @@ window.onload = function () {
 
   // ======================================================== Dynamic Card ========================================
 
-};
