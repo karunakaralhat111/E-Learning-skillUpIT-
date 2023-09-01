@@ -150,9 +150,10 @@ window.onload = function () {
   // console.log(currentPage)
   if (currentPage.includes("WebDesigning.html")) {
     changeBackground("hero4", BackgroundImages.hero4);
-  }else if (currentPage.includes("Placement.html")) {
-    changeBackground("hero4", BackgroundImages.hero5);
   }
+  // else if (currentPage.includes("Placement.html")) {
+  //   changeBackground("hero4", BackgroundImages.hero5);
+  // }
   // Add more conditions for other pages if needed
 
   // ======================================================== Dynamic Card ========================================
