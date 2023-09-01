@@ -128,6 +128,7 @@ closebtn.addEventListener("click", () => {
 window.onload = function () {
   let BackgroundImages = {
     hero4: "images/hero_slider_bg_1.jpg",
+    hero5:"images/placement.jpg",
   };
 
   // Function to change the background image of a specific hero section
@@ -141,88 +142,19 @@ window.onload = function () {
       heroElement.style.background = `${gradientColors},url(${imageUrl})`;
       heroElement.style.backgroundSize = "cover";
     }
+
   }
 
   // Check which hero section to target based on the current page
   const currentPage = window.location.pathname; // Get the current page URL
+  // console.log(currentPage)
   if (currentPage.includes("WebDesigning.html")) {
     changeBackground("hero4", BackgroundImages.hero4);
+  }else if (currentPage.includes("Placement.html")) {
+    changeBackground("hero4", BackgroundImages.hero5);
   }
   // Add more conditions for other pages if needed
 
   // ======================================================== Dynamic Card ========================================
 
-
-
-
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", "./card.json", true);
-  xmlhttp.onload = function () {
-    if (this.readyState === 4 && this.status === 200) {
-      var jsonData = JSON.parse(xmlhttp.responseText);
-      var dataArray=jsonData.PageIIICardData;
-      console.log(dataArray)
-      var WebDesigningCardsRow = document.getElementById("WebDesigningCardsRow");
-      console.log(WebDesigningCardsRow);
-
-      WebDesigningCardsRow.innerHTML = dataArray.map((x)=> {
-        console.log() 	
-        var {overlay,hoverBtnI,hoverH3,hoverDis,hoverBtnIIanchor,cardImg,cardBodyBtn,cardTittle,cardfooterBtn} = x;
-        return `
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3" data-aos="fade-up">
-        <div class="card-box">
-            <div class="hovercard-box ${overlay}">
-                <button>${hoverBtnI}</button>
-                <h3>${hoverH3}</h3>
-                <p class="hovercard-dis">
-                    ${hoverDis}
-                </p>
-                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
-                    <div class="hovercard-icon-container">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </div>
-                    <div class="hovercard-btn-container">
-                        <a  class="btn_" onclick="handleform()">${hoverBtnIIanchor}</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-img">
-                <img src="${cardImg}" alt="fundamental_img">
-            </div>
-            <div class="card-certificate-badge">
-                <span class="badge"> </span>
-                <span class="certificate"></span>
-            </div>
-            <div class="card-body">
-                <div class="btncontainer">
-                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
-                        FEATURED</a>
-                    <p class="mt-4">${cardBodyBtn}</p>
-                </div>
-                <div class="card-tittle">
-                    <h1>${cardTittle}</h1>
-                </div>
-                <div class="card_footer">
-                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
-                    <p>skillupitacademy</p>
-                </div>
-                <div class="card_footer_btn">
-                    <span>${cardfooterBtn}</span>
-                </div>
-            </div>
-        </div>
-    </div> `;
-      }).join("")
-        //  pageIIIData.map( (elm)=> {
-        //     console.log(elm)
-        //  })
-
-
-    }
-  };
-  xmlhttp.send();
 };
