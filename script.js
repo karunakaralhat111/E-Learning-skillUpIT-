@@ -48,59 +48,58 @@ window.addEventListener("scroll", () => {
 });
 
 // linking pages
- function redirectToLink(url){
-  window.location.href=url;
- }
- 
+function redirectToLink(url) {
+  window.location.href = url;
+}
+
 // ============================================= Login Form ===========================================================
-  var bottom_header_btn = document.querySelector(".bottom_header_btn");
-  var form_wrapper = document.querySelector(".form-wrapper");
-  var index_login_btn = document.querySelector(".index_login_btn");
+var bottom_header_btn = document.querySelector(".bottom_header_btn");
+var form_wrapper = document.querySelector(".form-wrapper");
+var index_login_btn = document.querySelector(".index_login_btn");
 
-  var login_form=document.querySelector('.login_form');
-  var close = login_form.querySelector(".close");
+var login_form = document.querySelector(".login_form");
+var close = login_form.querySelector(".close");
 
+bottom_header_btn.addEventListener("click", () => {
+  enquire_wrapper.classList.remove("zoom");
+  form_wrapper.style.display = "block";
+  enquire_wrapper.style, (display = "none");
+  setTimeout(() => {
+    form_wrapper.classList.add("zoom");
+  }, 10);
+});
 
-  bottom_header_btn.addEventListener("click", ()=>{
-    enquire_wrapper.classList.remove("zoom");
-    form_wrapper.style.display="block";
-    enquire_wrapper.style,display="none";
-    setTimeout(()=>{
-      form_wrapper.classList.add("zoom");
-    },10);
-  })
-
-  close.addEventListener("click",()=>{
-    setTimeout(()=>{
-      form_wrapper.classList.remove("zoom");
-    },10)
-  })
-
-  index_login_btn.addEventListener("click",()=>{
-    enquire_wrapper.classList.remove("zoom");
-    form_wrapper.style.display="block";
-    enquire_wrapper.style,display="none";
-    setTimeout(()=>{
-      form_wrapper.classList.add("zoom");
-    },10);
-  })
-  // ========================================  enquire form =================================================
-  var enquire_wrapper=document.querySelector(".enquire-wrapper");
-  var enquire_form=enquire_wrapper.querySelector(".enquire_form");
-  var enqclose=enquire_form.querySelector(".close");
-   function handleform(){
+close.addEventListener("click", () => {
+  setTimeout(() => {
     form_wrapper.classList.remove("zoom");
-    enquire_wrapper.style.display="block";
-    form_wrapper.style.display="none";
-    setTimeout(()=>{
-      enquire_wrapper.classList.add("zoom");
-    },10)
-   }
-   enqclose.addEventListener("click",()=>{
-    setTimeout(()=>{
-      enquire_wrapper.classList.remove("zoom");
-    },10)
-   })
+  }, 10);
+});
+
+index_login_btn.addEventListener("click", () => {
+  enquire_wrapper.classList.remove("zoom");
+  form_wrapper.style.display = "block";
+  enquire_wrapper.style, (display = "none");
+  setTimeout(() => {
+    form_wrapper.classList.add("zoom");
+  }, 10);
+});
+// ========================================  enquire form =================================================
+var enquire_wrapper = document.querySelector(".enquire-wrapper");
+var enquire_form = enquire_wrapper.querySelector(".enquire_form");
+var enqclose = enquire_form.querySelector(".close");
+function handleform() {
+  form_wrapper.classList.remove("zoom");
+  enquire_wrapper.style.display = "block";
+  form_wrapper.style.display = "none";
+  setTimeout(() => {
+    enquire_wrapper.classList.add("zoom");
+  }, 10);
+}
+enqclose.addEventListener("click", () => {
+  setTimeout(() => {
+    enquire_wrapper.classList.remove("zoom");
+  }, 10);
+});
 
 // =================================== Toggle with navbar ========================================================
 let fa_bars = document.querySelector(".fa-bars");
@@ -124,6 +123,106 @@ closebtn.addEventListener("click", () => {
   carouselExampleCaptions.style.display = "block";
   login_form.style.display = "block";
   // card_slider.style.display = "block";
-
 });
 // ====================================================== Change Hero Section Background ===========================================
+window.onload = function () {
+  let BackgroundImages = {
+    hero4: "images/hero_slider_bg_1.jpg",
+  };
+
+  // Function to change the background image of a specific hero section
+  function changeBackground(heroId, imageUrl) {
+    const heroElement = document.querySelector(".herosectionIV");
+    // console.log(heroElement);
+    let gradientColors = "linear-gradient(45deg, #ffffff81, #48474761)";
+
+    if (heroElement) {
+      // heroElement.style.backgroundImage = `url(${imageUrl})`;
+      heroElement.style.background = `${gradientColors},url(${imageUrl})`;
+      heroElement.style.backgroundSize = "cover";
+    }
+  }
+
+  // Check which hero section to target based on the current page
+  const currentPage = window.location.pathname; // Get the current page URL
+  if (currentPage.includes("WebDesigning.html")) {
+    changeBackground("hero4", BackgroundImages.hero4);
+  }
+  // Add more conditions for other pages if needed
+
+  // ======================================================== Dynamic Card ========================================
+
+
+
+
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", "./card.json", true);
+  xmlhttp.onload = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      var jsonData = JSON.parse(xmlhttp.responseText);
+      var dataArray=jsonData.PageIIICardData;
+      console.log(dataArray)
+      var WebDesigningCardsRow = document.getElementById("WebDesigningCardsRow");
+      console.log(WebDesigningCardsRow);
+
+      WebDesigningCardsRow.innerHTML = dataArray.map((x)=> {
+        console.log() 	
+        var {overlay,hoverBtnI,hoverH3,hoverDis,hoverBtnIIanchor,cardImg,cardBodyBtn,cardTittle,cardfooterBtn} = x;
+        return `
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-3" data-aos="fade-up">
+        <div class="card-box">
+            <div class="hovercard-box ${overlay}">
+                <button>${hoverBtnI}</button>
+                <h3>${hoverH3}</h3>
+                <p class="hovercard-dis">
+                    ${hoverDis}
+                </p>
+                <div class="hovercard-bottom d-flex justify-content-between align-items-center">
+                    <div class="hovercard-icon-container">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="hovercard-btn-container">
+                        <a  class="btn_" onclick="handleform()">${hoverBtnIIanchor}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-img">
+                <img src="${cardImg}" alt="fundamental_img">
+            </div>
+            <div class="card-certificate-badge">
+                <span class="badge"> </span>
+                <span class="certificate"></span>
+            </div>
+            <div class="card-body">
+                <div class="btncontainer">
+                    <a href="#" class="feature-btn"> <span><i class="fa-solid fa-star"></i></span>
+                        FEATURED</a>
+                    <p class="mt-4">${cardBodyBtn}</p>
+                </div>
+                <div class="card-tittle">
+                    <h1>${cardTittle}</h1>
+                </div>
+                <div class="card_footer">
+                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid" alt="profilelogo">
+                    <p>skillupitacademy</p>
+                </div>
+                <div class="card_footer_btn">
+                    <span>${cardfooterBtn}</span>
+                </div>
+            </div>
+        </div>
+    </div> `;
+      }).join("")
+        //  pageIIIData.map( (elm)=> {
+        //     console.log(elm)
+        //  })
+
+
+    }
+  };
+  xmlhttp.send();
+};

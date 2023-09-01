@@ -23,8 +23,10 @@
   --blue-c: #3478f6;
   --green-c:#0eb582;
   --icon-c:#212529;
+  --gray-c:#5d6d7e;
   --dark-blue:#2874a6;
   --dark-green:#196f3d;
+  --greenII:#27ae60;
   --neon:#1abc9c;
   --lightgreen:#b7950b;
   --roboto-font: "Roboto", sans-serif;
@@ -46,6 +48,12 @@
 }
 .green{
   background-color: var(--green-c);
+}
+.greenII{
+  background-color: var(--greenII);
+}
+.gray{
+  background-color: var(--gray-c);
 }
 .dark-green{
   background-color: var(--dark-green);
