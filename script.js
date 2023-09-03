@@ -164,6 +164,8 @@ window.onload = function () {
     changeBackground("hero3", BackgroundImages.hero7);
   } else if(currentPage.includes("DataScienceModule.html")){
     changeBackground("hero3", BackgroundImages.hero8);
+  } else if(currentPage.includes("CyberSecurity&Bitcoin.html")){
+    changeBackground("hero3", BackgroundImages.hero8);
   } 
 };
   // else if (currentPage.includes("Placement.html")) {
