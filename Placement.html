@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ####### Google fonts ################### -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- ######## font-awesome ################# -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--############# Bootstrap link ############# -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ########### Custome css link ##############-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="fundamental.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>SkillUp IT Academy : An IT Training Institute</title>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+    <div class="index_contact d-block d-md-none">
+        <a class="index_login_btn">Login</a>
+        <a href="tel:+917208581498" class="index_call_btn">Call Now</a>
+    </div>
+
+    <div class="topScroll">
+        <div class="indicator"></div>
+    </div>
+
+    <header id="header">
+        <div class="top_header py-2">
+            <div class="container">
+                <div class="row px-sm-5 px-2">
+                    <div class="col-12 col-sm-9 col-md-6 calling-num">
+                        <div class="contact">
+                            <span class="px-2"><i class="fas fa-phone"></i></span>
+                            <span> 7208581498</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-6 calling-social">
+                        <div class="social">
+                            <span><i class="fab fa-facebook-f"></i></span>
+                            <span id="g_plus"><i class="fab fa-google-plus-g"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row d-flex align-items-center px-2 px-sm-5">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-6 ">
+                        <div class="logo_container pt-2">
+                            <img src="images/logo.png" alt="logo" class="img-fluid">
+                            <h5 class="mb-2">Microsoft Offical Partner</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 text-end cutome-logn d-none d-xl-block ">
+                        <a class="btn_ bottom_header_btn">LOGIN</a>
+                    </div>
+
+                    <div class="col-xl-1 col-lg-9 col-md-8 col-sm-7 col-5 d-flex justify-content-end">
+                        <div class="bar">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-lg-5 col-xl-5 col-11 form-wrapper">
+                    <form class="p-4 login_form">
+                        <div class="mb-3 text-end">
+                            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        </div>
+                        <div class="mb-3 formtittle">
+                            <h2>Please enter your credentials</h2>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Username" class="form-label">Username:</label>
+                            <input type="text" class="form-control p-3" id="Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Password" class="form-label">Password:</label>
+                            <input type="text" class="form-control p-3" id="Password" required>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button class="btn_ form_login_btn" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="conatainer">
+            <div class="col-2">
+                <div class="close_icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-8 mx-auto my-5 ">
+                    <div class="row flex-column justify-content-center align-items-center">
+                        <div class="col-sm-8 col-md-7 col-lg-5 mx-auto nav_logo">
+                            <img src="images/logo.png" class="img-fluid mt-3 ">
+                        </div>
+                        <div class="nav_menu_container">
+                            <div class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4"
+                                onclick="redirectToLink('https://karunakaralhat111.github.io/E-Learning-skillUpIT-/Fundamentalmodule.html')">
+                                <a href="Fundamentalmodule.html" class="text-white fw-bold collapsed">fundamental
+                                    Moduls</a>
+                            </div>
+
+                            <div class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 "
+                                onclick="redirectToLink('https://karunakaralhat111.github.io/E-Learning-skillUpIT-/BussinessModule.html')">
+                                <a href="BussinessModule.html" class="text-white fw-bold collapsed"> Business Modules
+                                </a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4  mb-5"
+                                onclick="redirectToLink('https://karunakaralhat111.github.io/E-Learning-skillUpIT-//WebDesigning.html')">
+                                <a href="WebDesigning.html" class="text-white fw-bold collapsed">web designing moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 ">
+                                <a href="Placement.html" class="text-white fw-bold collapsed">placement moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 ">
+                                <a href="#" class="text-white fw-bold collapsed">infrastructure moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 ">
+                                <a href="#" class="text-white fw-bold collapsed">testing moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 ">
+                                <a href="#" class="text-white fw-bold collapsed">data science & visualization moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2 p-sm-4 ">
+                                <a href="#" class="text-white fw-bold collapsed">cyber security & bitcoin moduls</a>
+                            </div>
+
+                            <div
+                                class="col-12 col-sm-8 col-md-7 col-lg-7 my-5 mx-auto nav_menu text-center p-2  p-sm-4 ">
+                                <a href="#" class="text-white fw-bold collapsed">trending moduls</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ################## Hero section ########################### -->
+    <div class="herosectionIV" id="carouselExampleFade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class=" caption">
+                        <h1 data-aos="fade-up"><span class="text my-3">Skill</span>Up <span class="text">IT</span>
+                            Academy</h1>
+                        <h3 class="my-3 ">Bussiness Modules</h3>
+                        <a href="#" class="btn_ enquire_btn" onclick="handleform()" data-aos="fade-up">Apply Now</a>
+                    </div>
+                </div>
+                <div class="main-enquire-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 col-11 enquire-wrapper">
+                                <form class="p-4 enquire_form">
+                                    <div class="mb-3 text-end">
+                                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                                    </div>
+                                    <div class="mb-3 formtittle ">
+                                        <h2>Please enter your details</h2>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Username" class="form-label ">Name:</label>
+                                        <input type="text" class="form-control  p-3" id="Username" required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Password" class="form-label ">Email ID:</label>
+                                        <input type="email" class="form-control  p-3" id="Password" required>
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="Password" class="form-label">Mobile No:</label>
+                                        <input type="tel" class="form-control  p-3" id="Password" required>
+                                    </div>
+                                    <div class="mb-3 text-center ">
+                                        <button class="btn_ form_login_btn" type="submit">Apply</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #################### Hero Section-Start ######################### -->
+    <!-- ========================= Fundamental Modul ====================== -->
+    <section class="ourmodule mt-5 mb-5 py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Web
+                            Designing</span>
+                        Modules
+                    </h1>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="cardbox-row d-flex justify-content-lg-center flex-wrap" id="WebDesigningCardsRow">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box purple">
+                                <button>All Graduates Stream</button>
+                                <h3>Full Stack Development- Java</h3>
+                                <p class="hovercard-dis">
+                                    App And Web App Development Solution
+                                <p class="hovercard-dis-II text-white h3">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/JavaFullStack.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Full Stack Development- Java</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Open Source Solution</a> -->
+                                    <span>International Certification*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box yellow">
+                                <button>All Graduates Stream</button>
+                                <h3>Full Stack Development- .NET</h3>
+                                <p class="hovercard-dis">
+                                    Cross Platform Development Solution
+                                <p class="hovercard-dis-II h3 text-white">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/full-stack dot net.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Full Stack Development-.NET</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">International Certification*</a> -->
+                                    <span>International Certification*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box red">
+                                <button>All Graduates Stream</button>
+                                <h3>Full Stack Modules - Python</h3>
+                                <p class="hovercard-dis">AI-Based App Development <br> Solution
+                                <p class="hovercard-dis-II h3 text-white">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/full stack python.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Full Stack Modules - Python</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">International Certification*</a> -->
+                                    <span>International Certification*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box blue">
+                                <button>All Graduates Stream</button>
+                                <h3>MERN - JavaScript Framework</h3>
+                                <p class="hovercard-dis">
+                                    Full Stack 3-Tier Application Development
+                                <p class="hovercard-dis-II h3 text-white">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/mean stack1 card.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>MERN STACK Development</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Open Source Solution</a> -->
+                                    <span>Open Source Solution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box green">
+                                <button>All Graduates Stream</button>
+                                <h3>MEAN Stack Development</h3>
+                                <p class="hovercard-dis">Cloud Ready Development Solution
+                                <p class="hovercard-dis-II h3 text-white">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/mean stack2 card.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>MEAN Stack Development</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Open Source Solution</a> -->
+                                    <span>Open Source Solution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card-box" id="Placement-card" data-aos="fade-up">
+                            <div class="hovercard-box pink">
+                                <button>All Graduates Stream</button>
+                                <h3>Stack Development - AI</h3>
+                                <p class="hovercard-dis">DS , ML , DL Based Development Solution
+                                <p class="hovercard-dis-II h3 text-white">Duration : 3 months*</p>
+                                </p>
+
+                                <div
+                                    class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                    <div class="hovercard-icon-container">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+
+                                    </div>
+                                    <div class="hovercard-btn-container">
+                                        <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-img">
+                                <img src="images/stack AI.webp" alt="fundamental_img">
+                            </div>
+                            <div class="card-certificate-badge">
+                                <span class="badge"> </span>
+                                <span class="certificate"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="btncontainer">
+                                    <a href="#" class="feature-btn"> <span><i
+                                                class="fa-solid fa-star"></i></span>
+                                        FEATURED</a>
+                                    <p class="mt-4">All Graduates Stream</p>
+                                </div>
+                                <div class="card-tittle">
+                                    <h1>Stack Development - AI</h1>
+                                </div>
+                                <div class="card_footer">
+                                    <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                        alt="profilelogo">
+                                    <p>skillupitacademy</p>
+                                </div>
+                                <div class="card_footer_btn">
+                                    <!-- <a href="#">Cutting Edge Solution</a> -->
+                                    <span>Cutting Edge Solution</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn_ my-5 text-center" onclick="handleform()">More</a>
+                </div>
+            </div>
+
+    </section>
+    <!-- #################### Fundametal Modul-End ######################### -->
+    <!--#################### Counter Area II section start #######################   -->
+    <div class="CounterII text-center">
+        <section>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="counterII_img_container" data-aos="fade-right">
+                            <img src="images/counter_icon1.png" class="img-fluid" alt="">
+                            <h2>216.67%</h2>
+                            <p>MAX SALARY HIKE</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="counterII_img_container" data-aos="fade-up">
+                            <img src="images/counter_icon2.png" class="img-fluid" alt="">
+                            <h2>91.62%</h2>
+                            <p>AVERAGE SALARY HIKE</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="counterII_img_container" data-aos="fade-down">
+                            <img src="images/counter_icon3.png" class="img-fluid" alt="">
+                            <h2>96%</h2>
+                            <p>PLACEMENT SUCCESS RATE</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-6">
+                        <div class="counterII_img_container" data-aos="fade-left">
+                            <img src="images/counter_icon3.png" class="img-fluid" alt="">
+                            <h2>45</h2>
+                            <p>NO. OF COMPANIES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--#################### Counter Area II section End #######################   -->
+    <!-- ======================= Counter Area start ======================== -->
+    <div class="counder_area text-center">
+
+        <section>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="Counter-tittle mb-1 pt-3">
+                            <h1 class="text-white m-3 pt-5" data-aos="fade-up">Creative Thinking & Innovation. Enroll
+                                Now.</h1>
+                            <p data-aos="fade-right">LEARN SOMETHING WHEREVER YOU ARE</p>
+                            <a href="#" class="btn_ my-5" data-aos="fade-left">JOIN A COURSE NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ======================= Counter Area End ======================== -->
+    <!--======================== Card Slider start ========================  -->
+    <div class="carousel-card-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center section_tittle my-5" data-aos="fade-up"> <span class="text">Related</span>
+                        Courses </h1>
+                </div>
+            </div>
+        </div>
+        <div class="sliderbox">
+            <section class="card-slider">
+                <div id="carouselexamplefade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselexamplecaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselexamplecaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-card-wrapper d-flex flex-wrap">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card-box" data-aos="fade-up">
+                                        <div class="hovercard-box blue">
+                                            <button>All Graduates Stream</button>
+                                            <h3>MERN - JavaScript Framework</h3>
+                                            <p class="hovercard-dis">
+                                                Full Stack 3-Tier Application Development
+                                            <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                            </p>
+
+                                            <div
+                                                class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                                <div class="hovercard-icon-container">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                                </div>
+                                                <div class="hovercard-btn-container">
+                                                    <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="images/mean stack1 card.webp" alt="fundamental_img">
+                                        </div>
+                                        <div class="card-certificate-badge">
+                                            <span class="badge"> </span>
+                                            <span class="certificate"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="btncontainer">
+                                                <a href="#" class="feature-btn"> <span><i
+                                                            class="fa-solid fa-star"></i></span>
+                                                    FEATURED</a>
+                                                <p class="mt-4">All Graduates Stream</p>
+                                            </div>
+                                            <div class="card-tittle">
+                                                <h1>MERN STACK Development</h1>
+                                            </div>
+                                            <div class="card_footer">
+                                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                                    alt="profilelogo">
+                                                <p>skillupitacademy</p>
+                                            </div>
+                                            <div class="card_footer_btn">
+                                                <!-- <a href="#">Open Source Solution</a> -->
+                                                <span>Open Source Solution</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card-box" data-aos="fade-up">
+                                        <div class="hovercard-box yellow">
+                                            <button>All Graduates Stream</button>
+                                            <h3>Full Stack Development - .NET</h3>
+                                            <p class="hovercard-dis">
+                                                Cross Platform Development Solution
+                                            <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                            </p>
+
+                                            <div
+                                                class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                                <div class="hovercard-icon-container">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                                </div>
+                                                <div class="hovercard-btn-container">
+                                                    <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="images/full-stack dot net.webp" alt="fundamental_img">
+                                        </div>
+                                        <div class="card-certificate-badge">
+                                            <span class="badge"> </span>
+                                            <span class="certificate"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="btncontainer">
+                                                <a href="#" class="feature-btn"> <span><i
+                                                            class="fa-solid fa-star"></i></span>
+                                                    FEATURED</a>
+                                                <p class="mt-4">All Graduates Stream</p>
+                                            </div>
+                                            <div class="card-tittle">
+                                                <h1>Full Stack Development-.NET</h1>
+                                            </div>
+                                            <div class="card_footer">
+                                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                                    alt="profilelogo">
+                                                <p>skillupitacademy</p>
+                                            </div>
+                                            <div class="card_footer_btn">
+                                                <!-- <a href="#">International Certification*</a> -->
+                                                <span>International Certification*</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card-box" data-aos="fade-up">
+                                        <div class="hovercard-box red">
+                                            <button>All Graduates Stream</button>
+                                            <h3>Full Stack Modules - Python</h3>
+                                            <p class="hovercard-dis">AI-Based App Development <br> Solution
+                                            <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                            </p>
+
+                                            <div
+                                                class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                                <div class="hovercard-icon-container">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                                </div>
+                                                <div class="hovercard-btn-container">
+                                                    <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="images/full stack python.webp" alt="fundamental_img">
+                                        </div>
+                                        <div class="card-certificate-badge">
+                                            <span class="badge"> </span>
+                                            <span class="certificate"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="btncontainer">
+                                                <a href="#" class="feature-btn"> <span><i
+                                                            class="fa-solid fa-star"></i></span>
+                                                    FEATURED</a>
+                                                <p class="mt-4">All Graduates Stream</p>
+                                            </div>
+                                            <div class="card-tittle">
+                                                <h1>Full Stack Modules - Python</h1>
+                                            </div>
+                                            <div class="card_footer">
+                                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                                    alt="profilelogo">
+                                                <p>skillupitacademy</p>
+                                            </div>
+                                            <div class="card_footer_btn">
+                                                <!-- <a href="#">International Certification*</a> -->
+                                                <span>International Certification*</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card-wrapper d-flex flex-md-row flex-column">
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card-box" data-aos="fade-up">
+                                        <div class="hovercard-box green">
+                                            <button>All Graduates Stream</button>
+                                            <h3>MEAN Stack Development</h3>
+                                            <p class="hovercard-dis">Cloud Ready Development Solution
+                                            <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                            </p>
+
+                                            <div
+                                                class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                                <div class="hovercard-icon-container">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                                </div>
+                                                <div class="hovercard-btn-container">
+                                                    <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="images/mean stack2 card.webp" alt="fundamental_img">
+                                        </div>
+                                        <div class="card-certificate-badge">
+                                            <span class="badge"> </span>
+                                            <span class="certificate"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="btncontainer">
+                                                <a href="#" class="feature-btn"> <span><i
+                                                            class="fa-solid fa-star"></i></span>
+                                                    FEATURED</a>
+                                                <p class="mt-4">All Graduates Stream</p>
+                                            </div>
+                                            <div class="card-tittle">
+                                                <h1>MEAN Stack Development</h1>
+                                            </div>
+                                            <div class="card_footer">
+                                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                                    alt="profilelogo">
+                                                <p>skillupitacademy</p>
+                                            </div>
+                                            <div class="card_footer_btn">
+                                                <!-- <a href="#">Open Source Solution</a> -->
+                                                <span>Open Source Solution</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card-box" data-aos="fade-up">
+                                        <div class="hovercard-box pink">
+                                            <button>All Graduates Stream</button>
+                                            <h3>Stack Development - AI</h3>
+                                            <p class="hovercard-dis">DS , ML , DL Based Development Solution
+                                            <p class="hovercard-dis-II text-white">Duration : 3 months*</p>
+                                            </p>
+
+                                            <div
+                                                class="hovercard-bottom d-flex justify-content-between align-items-center">
+                                                <div class="hovercard-icon-container">
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                    <span><i class="fa-solid fa-star"></i></span>
+
+                                                </div>
+                                                <div class="hovercard-btn-container">
+                                                    <a class="btn_" onclick="handleform()">CLICK TO ENUIRE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-img">
+                                            <img src="images/stack AI.webp" alt="fundamental_img">
+                                        </div>
+                                        <div class="card-certificate-badge">
+                                            <span class="badge"> </span>
+                                            <span class="certificate"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="btncontainer">
+                                                <a href="#" class="feature-btn"> <span><i
+                                                            class="fa-solid fa-star"></i></span>
+                                                    FEATURED</a>
+                                                <p class="mt-4">All Graduates Stream</p>
+                                            </div>
+                                            <div class="card-tittle">
+                                                <h1>Stack Development - AI</h1>
+                                            </div>
+                                            <div class="card_footer">
+                                                <img src="images/PROFILE_SKILLUP_LOGO-02.jpg" class="img-fluid"
+                                                    alt="profilelogo">
+                                                <p>skillupitacademy</p>
+                                            </div>
+                                            <div class="card_footer_btn">
+                                                <!-- <a href="#">Cutting Edge Solution</a> -->
+                                                <span>Cutting Edge Solution</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselexamplefade"
+                        data-bs-slide="prev">
+                        <i class="d-none d-md-block fas fa-chevron-left" aria-hidden="true"></i>
+                        <!-- <span class="visually-hidden">Previous</span> -->
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselexamplefade"
+                        data-bs-slide="next">
+                        <i class="d-none d-md-block fas fa-chevron-right" aria-hidden="true"></i>
+                        <!-- <span class="visually-hidden">Next</span> -->
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--======================== Card Slider End ========================  -->
+    <!-- =========================== Footer ================================= -->
+    <footer class="footer ">
+        <section>
+            <div class="container">
+                <div class="row row1">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer_col">
+                            <div class="footer_heading">
+                                <h1>Popular Courses</h1>
+                            </div>
+                            <div class="footer_col_menu text-center">
+                                <ul>
+                                    <li data-aos="fade-up"><a href="#">Full Stack Development</a></li>
+                                    <li data-aos="fade-up"><a href="#">Data Science</a></li>
+                                    <li data-aos="fade-up"><a href="#">Web APP</a></li>
+                                    <li data-aos="fade-up"><a href="#">APP Development</a></li>
+                                    <li data-aos="fade-up"><a href="#">Deep Learning</a></li>
+                                    <li data-aos="fade-up"><a href="#">Python</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer_col">
+                            <div class="footer_heading">
+                                <h1>Quick Links</h1>
+                            </div>
+                            <div class="footer_col_menu">
+                                <ul>
+                                    <li data-aos="fade-up"><a href="#">Placement Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Business Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Web Designing Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Cyber Security Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Bitcoin Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Cryptocurrency Modules</a></li>
+                                    <li data-aos="fade-up"><a href="#">Ethical Hacking Modules</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer_col">
+                            <div class="footer_heading">
+                                <h1>Contact Us</h1>
+                            </div>
+                            <div class="footer_col_menu">
+                                <ul>
+                                    <li data-aos="fade-up"><a href="#"><span><i
+                                                    class="fa-solid fa-phone-flip footer_icon"></i></span>7208581498
+                                        </a></li>
+                                    <li data-aos="fade-up"><a href="#"><span><i
+                                                    class="fa-regular fa-envelope footer_icon"></i></span>info@skillupitacademy.com</a>
+                                    </li>
+                                    <li data-aos="fade-up"><a href="#"><span><i
+                                                    class="fa-solid fa-location-dot footer_icon"></i></span>Andheri (W)
+                                            | Ghatkopar (E)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center footer_bottom">
+                            <p>Copyright © 2020 SkillUp IT Academy All Rights Reserved 3170</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <a href="#" class="to_top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+
+    <!-- ############# Bootstrap Script ################ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+        </script>
+    <!-- ######### coustome-JS ###################### -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js" type="text/javascript"></script>
+    <!-- <script src="card.json"></script> -->
+</body>
+</html>
