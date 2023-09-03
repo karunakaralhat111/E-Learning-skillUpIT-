@@ -132,7 +132,7 @@ window.onload = function () {
     hero5:"images/placement.jpg",
     hero6:"images/couldcomputing.jpg",
     hero7:"images/testing.jpg",
-    hero8:"images/dataScience.jpg",
+    hero8:"images/dataScience.jpg"
   };
 
   // Function to change the background image of a specific hero section
