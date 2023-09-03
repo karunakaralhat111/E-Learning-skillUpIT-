@@ -127,7 +127,7 @@ closebtn.addEventListener("click", () => {
 // ====================================================== Change Hero Section Background ===========================================
 window.onload = function () {
   let BackgroundImages = {
-    hero3:"images/bussinessmodule_hero.webp",
+    hero3:"images/bussiness.jpg",
     hero4: "images/hero_slider_bg_1.jpg",
     hero5:"images/placement.jpg",
   };
