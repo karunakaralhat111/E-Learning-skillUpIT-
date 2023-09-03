@@ -132,7 +132,8 @@ window.onload = function () {
     hero5:"images/placement.jpg",
     hero6:"images/couldcomputing.jpg",
     hero7:"images/testing.jpg",
-    hero8:"images/dataScience.jpg"
+    hero8:"images/dataScience.jpg",
+    hero9:"images/Trendingmodulebg.jpg"
   };
 
   // Function to change the background image of a specific hero section
@@ -166,6 +167,9 @@ window.onload = function () {
     changeBackground("hero3", BackgroundImages.hero8);
   } else if(currentPage.includes("CyberSecurity&Bitcoin.html")){
     changeBackground("hero3", BackgroundImages.hero8);
+  } 
+  else if(currentPage.includes("TrendingModule.html")){
+    changeBackground("hero3", BackgroundImages.hero9);
   } 
 };
   // else if (currentPage.includes("Placement.html")) {
