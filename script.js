@@ -130,6 +130,7 @@ window.onload = function () {
     hero3:"images/bussiness.jpg",
     hero4: "images/hero_slider_bg_1.jpg",
     hero5:"images/placement.jpg",
+    hero6:"images/couldcomputing.jpg",
   };
 
   // Function to change the background image of a specific hero section
@@ -155,6 +156,8 @@ window.onload = function () {
     changeBackground("hero3", BackgroundImages.hero4);
   }else if(currentPage.includes("Placement.html")){
     changeBackground("hero3", BackgroundImages.hero5);
+  } else if(currentPage.includes("InfrastructureModule.html")){
+    changeBackground("hero3", BackgroundImages.hero6);
   } 
 };
   // else if (currentPage.includes("Placement.html")) {

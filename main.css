@@ -994,7 +994,7 @@ footer ul li a i{
   background-repeat: no-repeat !important;
   background-size: cover !important;
   height: 65vh !important;
-  position: relative;
+  position: relative !important;
   box-sizing: border-box !important;
 }
 #Placement-card .hovercard-box h3{
