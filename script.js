@@ -131,7 +131,8 @@ window.onload = function () {
     hero4: "images/hero_slider_bg_1.jpg",
     hero5:"images/placement.jpg",
     hero6:"images/couldcomputing.jpg",
-    hero7:"images/testing.jpg"
+    hero7:"images/testing.jpg",
+    hero8:"images/dataScience.jpg",
   };
 
   // Function to change the background image of a specific hero section
@@ -161,6 +162,8 @@ window.onload = function () {
     changeBackground("hero3", BackgroundImages.hero6);
   } else if(currentPage.includes("TestingModule.html")){
     changeBackground("hero3", BackgroundImages.hero7);
+  } else if(currentPage.includes("DataScienceModule.html")){
+    changeBackground("hero3", BackgroundImages.hero8);
   } 
 };
   // else if (currentPage.includes("Placement.html")) {

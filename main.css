@@ -21,6 +21,7 @@
   --dark_purple:#9b59b6;
   --red-c: #f20f10;
   --blue-c: #3478f6;
+  --blue-cII:#3498db;
   --green-c:#0eb582;
   --icon-c:#212529;
   --gray-c:#5d6d7e;
@@ -37,6 +38,10 @@
 .blue {
   background-color: #3478f6;
 }
+.blueII{
+  background-color: var(--blue-cII);
+}
+
 .yellow {
   background-color: var(--hover-yello-c);
 }
