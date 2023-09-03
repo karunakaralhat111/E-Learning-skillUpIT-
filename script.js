@@ -127,8 +127,9 @@ closebtn.addEventListener("click", () => {
 // ====================================================== Change Hero Section Background ===========================================
 window.onload = function () {
   let BackgroundImages = {
+    hero3:"images/bussinessmodule_hero.webp",
     hero4: "images/hero_slider_bg_1.jpg",
-    // hero5:"images/placement.jpg",
+    hero5:"images/placement.jpg",
   };
 
   // Function to change the background image of a specific hero section
@@ -148,9 +149,13 @@ window.onload = function () {
   // Check which hero section to target based on the current page
   const currentPage = window.location.pathname; // Get the current page URL
   // console.log(currentPage)
-  if (currentPage.includes("WebDesigning.html")) {
-    changeBackground("hero4", BackgroundImages.hero4);
-  }
+  if (currentPage.includes("BussinessModule.html")) {
+    changeBackground("hero3", BackgroundImages.hero3);
+  }else if(currentPage.includes("WebDesigning.html")){
+    changeBackground("hero3", BackgroundImages.hero4);
+  }else if(currentPage.includes("Placement.html")){
+    changeBackground("hero3", BackgroundImages.hero5);
+  } 
 };
   // else if (currentPage.includes("Placement.html")) {
   //   changeBackground("hero4", BackgroundImages.hero5);
