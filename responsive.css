@@ -234,6 +234,28 @@
   .footer_bottom p {
     font-size: 1.4rem;
   }
+  /* ========================FullstackAI_COunter_Tittile================== */
+  
+  .FullstackAI_COunter_Tittile{
+    box-sizing: border-box;
+  }
+  .FullstackAI_COunter_Tittile a{
+    padding: 18px 20px !important;
+    font-size: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #FullstackAI_COunter_TittileII h1{
+    font-size: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  #FullstackAI_COunter_TittileII a{
+    padding: 18px 20px !important;
+    font-size: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
 }
 /* =================================================== vivew-port = 479px ======================================== */
 

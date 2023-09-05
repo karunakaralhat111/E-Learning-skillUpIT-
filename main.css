@@ -1032,3 +1032,7 @@ footer ul li a i{
 .tools-cover .row div img{
   width: 10rem;
 }
+.tools-cover{
+  overflow: hidden;
+  box-sizing: border-box;
+}
