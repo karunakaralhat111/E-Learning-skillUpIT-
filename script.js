@@ -133,7 +133,9 @@ window.onload = function () {
     hero6:"images/couldcomputing.jpg",
     hero7:"images/testing.jpg",
     hero8:"images/dataScience.jpg",
-    hero9:"images/Trendingmodulebg.jpg"
+    hero9:"images/Trendingmodulebg.jpg",
+    hero10:"images/FullstackAI.jpg",
+    hero11:"images/bg-python.jpg"
   };
 
   // Function to change the background image of a specific hero section
@@ -170,6 +172,12 @@ window.onload = function () {
   } 
   else if(currentPage.includes("TrendingModule.html")){
     changeBackground("hero3", BackgroundImages.hero9);
+  } 
+  else if(currentPage.includes("FullstackAI.html")){
+    changeBackground("hero3", BackgroundImages.hero10);
+  } 
+  else if(currentPage.includes("FullstackPython.html")){
+    changeBackground("hero3", BackgroundImages.hero11);
   } 
 };
   // else if (currentPage.includes("Placement.html")) {

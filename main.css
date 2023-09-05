@@ -1025,3 +1025,10 @@ footer ul li a i{
   margin-bottom: 0 !important;
   margin-top: 20%; 
  }
+ /* ======================= Full stack AI ================= */
+ #fullstackAI_caption{
+  font-size: 4.5rem;
+}
+.tools-cover .row div img{
+  width: 10rem;
+}
